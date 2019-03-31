@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Никита Самсонов](https://up.htmlacademy.ru/adaptive/16/user/235161).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Жарков](https://up.htmlacademy.ru/adaptive/16/user/191422).
 
 ---
 
