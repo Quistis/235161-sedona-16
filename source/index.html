@@ -1,12 +1,119 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
   </head>
+
   <body>
+    <header class="page-header">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="102" height="83" alt="Логотип Седоны">
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">Открыть меню</button>
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+      <span class="page-header__background-img"><img class="page-header__background-img-mobile" src="background-img-mobile.png" alt="Доброй пожаловать в великолепную Седону. А Гранд-Каньон - отстой!:D"></span>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-main">
+      <section class="advantages">
+        <header class="advantages-header">
+          <h2 class="visually-hidden">Почему посетить Седону было бы круто</h2>
+          <b class="advantages__slogan">Седона — небольшой городок в Аризоне,<br>  заслуживающий большего!</b>
+          <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </header>
+        <ol class="advantages-list">
+          <li class="advantages-list__item">
+            <h3 class="advantages-list__title">Настоящий городок</h3>
+            <p class="advatages-list__reason-number">— №1 —</p>
+            <p class="advantages-list__reason">Седона не аттракцион для туристов,<br> там течёт своя жизнь</p>
+            <img class="advantages-list__image" src="advantages-town.jpg" width="320" height="260" alt="Настоящий городок">
+          </li>
+          <li class="advantages-list__item">
+            <ul class="advantages-list__item-feature feature-list">
+              <li class="feature-list__item feature-list__item--housing">
+                <h3 class="feature-list__title">Жилье</h3>
+                <p class="feature-list__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="feature-list__item feature-list__item--souvenir">
+                <h3 class="feature-list__title">Сувениры</h3>
+                <p class="feature-list__description">Не только китайского, но и местного производства!</p>
+              </li>
+              <li class="feature-list__item feature-list__item--food">
+                <h3 class="feature-list__title">Еда</h3>
+                <p class="feature-list__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+              </li>
+            </ul>
+          </li>
+          <li class="advantages-list__item">
+            <h3 class="advantages-list__title">Там есть мост дьявола</h3>
+            <p class="advatages-list__reason-number">— №2 —</p>
+            <p class="advantages-list__reason">Да, по нему можно пройти! Если вы<br> осмелитесь, конечно</p>
+            <img class="advantages-list__image" src="advantages-devils-bridge.jpg" width="320" height="260" alt="Мост дьявола">
+          </li>
+          <li class="advantages-list__item">
+            <h3 class="advantages-list__title">Небольшая площадь</h3>
+            <p class="advatages-list__reason-number">— №3 —</p>
+            <p class="advantages-list__reason">ВСЕ интересные места находятся<br> очень близко</p>
+          </li>
+          <li class="advantages-list__item">
+            <h3 class="advantages-list__title">Красивая дорога</h3>
+            <p class="advatages-list__reason-number">— №4 —</p>
+            <p class="advantages-list__reason">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+          </li>
+          <li class="advantages-list__item">
+            <h3 class="advantages-list__title">Мало туристов</h3>
+            <p class="advatages-list__reason-number">— №5 —</p>
+            <p class="advantages-list__reason">Большинство едет в гранд каньон<br> и толпится там</p>
+          </li>
+        </ol>
+      </section>
+      <section class="hotel-booking">
+        <h2 class="visually hidden">Поиск и бронирование гостиницы</h2>
+        <h3 class="hotel-booking__title">Заинтересовались?</h3>
+        <p class="hotel-booking__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a class="button hotel-booking__button" href="#"></a>
+      </section>
+    </main>
 
+    <footer class="page-footer">
+      <section class="footer-map">
+        <h2 class="visually-hidden">Карта</h2>
+        <iframe class="footer-map__widget" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104352.468948204!2d-111.67817086214654!3d35.181187291174986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8ef7da2e2631%3A0x8e1f3ca1cedbb300!2sFlagstaff%2C+AZ%2C+USA!5e0!3m2!1sen!2skz!4v1554326302110!5m2!1sen!2skz" width="320" height="350" allowfullscreen aria-label="Аризона, США, Флагстафф"></iframe>
+      </section>
+      <section class="page-footer__social social">
+        <h2 class="visually-hidden">Социальные контакты</h2>
+        <b class="social__hashtag">#Visitsedona</b>
+        <div class="social__social-links">
+          <ul class="social__social-list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в инстаграмме</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы на ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <p class="social__developed-by">Разработано <a class="social__developer-link" href="https://htmlacademy.ru/">HTML Academy</a></p>
+      </section>
+    </footer>
   </body>
 </html>
