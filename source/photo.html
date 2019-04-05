@@ -13,13 +13,13 @@
         <button class="main-navigation__toggle" type="button">Открыть меню</button>
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
-            <a href="#">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a href="#">Фото и видео</a>
+            <a href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Форма отзыва</a>
+            <a href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
             <a href="https://htmlacademy.ru/">HTML Academy</a>
@@ -27,7 +27,7 @@
         </ul>
       </nav>
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-      <span class="page-header__background-img"><img class="page-header__background-img-mobile page-header__background-img-mobile--simplified" src="background-img-mobile.png" alt="Доброй пожаловать в великолепную Седону. А Гранд-Каньон - отстой!:D"></span>
+      <div class="page-header__small-logo"><img class="page-header__small-logo-img" src="small-logo.svg" alt="Добро пожаловать в великолепную Седону. А Гранд-Каньон - отстой!:D"></div>
     </header>
 
     <main class="page-main">
@@ -36,52 +36,62 @@
         <p class="photo-block__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         <ul class="photo-block__gallery gallery-list">
           <li class="gallery-list__item">
-            <img class="gallery-list__image" src="" width="" height="" alt="Неродные просторы">
-            <h3 class="gallery-list__title">Неродные просторы</h3>
-            <p class="gallery-list__author">Автор фото: Борис</p>
-            <button class="button gallery-list__button visually-hidden"></button>
-            <b class="gallery-list__like-counter">1350</b>
+            <a class="gallery-list__full-version-link" href="#"><img class="gallery-list__image" src="" width="" height="" alt="Неродные просторы"></a>
+            <div class="gallery-list__gallery-wrapper">
+              <h3 class="gallery-list__title">Неродные просторы</h3>
+              <p class="gallery-list__author">Автор фото: Борис</p>
+              <button class="gallery-list__button visually-hidden">Нравится</button>
+              <b class="gallery-list__like-counter">1350</b>
+            </div>
           </li>
           <li class="gallery-list__item">
-            <img class="gallery-list__image" src="" width="" height="" alt="Местная растительность">
-            <h3 class="gallery-list__title">Местная растительность</h3>
-            <p class="gallery-list__author">Автор фото: Сергей</p>
-            <button class="button gallery-list__button visually-hidden"></button>
-            <b class="gallery-list__like-counter">143</b>
+            <a class="gallery-list__full-version-link" href="#"><img class="gallery-list__image" src="" width="" height="" alt="Местная растительность"></a>
+            <div class="gallery-list__gallery-wrapper">
+              <h3 class="gallery-list__title">Местная растительность</h3>
+              <p class="gallery-list__author">Автор фото: Сергей</p>
+              <button class="gallery-list__button visually-hidden">Нравится</button>
+              <b class="gallery-list__like-counter">143</b>
+            </div>
           </li>
           <li class="gallery-list__item">
-            <img class="gallery-list__image" src="" width="" height="" alt="Дорога на север">
-            <h3 class="gallery-list__title">Дорога на север</h3>
-            <p class="gallery-list__author">Автор фото: Петр</p>
-            <button class="button gallery-list__button visually-hidden"></button>
-            <b class="gallery-list__like-counter">96</b>
+            <a class="gallery-list__full-version-link" href="#"><img class="gallery-list__image" src="" width="" height="" alt="Дорога на север"></a>
+            <div class="gallery-list__gallery-wrapper">
+              <h3 class="gallery-list__title">Дорога на север</h3>
+              <p class="gallery-list__author">Автор фото: Петр</p>
+              <button class="gallery-list__button visually-hidden">Нравится</button>
+              <b class="gallery-list__like-counter">96</b>
+            </div>
           </li>
           <li class="gallery-list__item">
-            <img class="gallery-list__image" src="" width="" height="" alt="Мост дьявола">
-            <h3 class="gallery-list__title">Мость дьявола</h3>
-            <p class="gallery-list__author">Автор фото: Антон</p>
-            <button class="button gallery-list__button visually-hidden"></button>
-            <b class="gallery-list__like-counter">254</b>
+            <a class="gallery-list__full-version-link" href="#"><img class="gallery-list__image" src="" width="" height="" alt="Мост дьявола"></a>
+            <div class="gallery-list__gallery-wrapper">
+              <h3 class="gallery-list__title">Мость дьявола</h3>
+              <p class="gallery-list__author">Автор фото: Антон</p>
+              <button class="gallery-list__button visually-hidden">Нравится</button>
+              <b class="gallery-list__like-counter">254</b>
+            </div>
           </li>
         </ul>
       </section>
       <section class="video-block">
-        <h3 class="video-block__title"></h3>
-        <p class="video-block__description"></p>
+        <h3 class="video-block__title">Все еще сомневатесь?</h3>
+        <p class="video-block__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <img class="video-block__image" src="" width="" height="" alt="Заглушка для видео-плеера">
-        <div class="video-player">
-          <div class="video-player__progress-bar"></div>
-          <div class="video-players__progress-marker"></div>
-        </div>
         <ul class="video-block__list player-control">
           <li class="player-control__item">
-            <button class="player-control__playback"></button>
+            <div class="player-control__progress-bar-wrapper">
+              <div class="player-control__progress-bar"></div>
+              <div class="player-control__progress-marker"></div>
+            </div>
           </li>
           <li class="player-control__item">
-            <button class="player-control__subtitles"></button>
+            <button class="player-control__playback">Воспроизвести/Реплей</button>
           </li>
           <li class="player-control__item">
-            <button class="player-control__fullscreen"></button>
+            <button class="player-control__subtitles">Включить/выключить субтитры</button>
+          </li>
+          <li class="player-control__item">
+            <button class="player-control__fullscreen">Перейти в полноэкранный режим</button>
           </li>
         </ul>
       </section>

@@ -13,13 +13,13 @@
         <button class="main-navigation__toggle" type="button">Открыть меню</button>
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
-            <a href="#">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Фото и видео</a>
+            <a href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a href="#">Форма отзыва</a>
+            <a href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
             <a href="https://htmlacademy.ru/">HTML Academy</a>
@@ -27,7 +27,7 @@
         </ul>
       </nav>
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-      <span class="page-header__background-img"><img class="page-header__background-img-mobile page-header__background-img-mobile--simplified" src="background-img-mobile.png" alt="Доброй пожаловать в великолепную Седону. А Гранд-Каньон - отстой!:D"></span>
+      <div class="page-header__small-logo"><img class="page-header__small-logo-img" src="small-logo.svg" alt="Добро пожаловать в великолепную Седону. А Гранд-Каньон - отстой!:D"></div>
     </header>
 
     <main class="page-main">
@@ -41,23 +41,23 @@
           <fieldset class="feedback-form__full-name">
             <legend class="feedback-form__legend">Представьтесь:</legend>
             <span class="visually-hidden">Введите свои фамилию, имя и отчество</span>
-            <label class="feedback-form__label feedback-form__label--fullname" for="first-name"></label>
+            <label class="feedback-form__label feedback-form__label--fullname" for="first-name">Имя<sup>*</sup>:</label>
             <input class="feedback-form__input feedback-form__input--fullname" type="text" name="first-name" id="first-name" placeholder="Петр">
 
-            <label class="feedback-form__label feedback-form__label--fullname" for="surname"></label>
+            <label class="feedback-form__label feedback-form__label--fullname" for="surname">Фамилия<sup>*</sup>:</label>
             <input class="feedback-form__input feedback-form__input--fullname" type="text" name="surname" id="surname" placeholder="Иванов">
 
-            <label class="feedback-form__label feedback-form__label--fullname" for="patronymic"></label>
+            <label class="feedback-form__label feedback-form__label--fullname" for="patronymic">Отчество:</label>
             <input class="feedback-form__input feedback-form__input--fullname" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
           </fieldset>
           <fieldset class="feedback-form__contacts">
             <legend class="feedback-form__legend">Контактная информация:</legend>
             <span class="visually-hidden">Введите ваш телефон и e-mail</span>
             <label class="feedback-form__label" for="phone">Контактный телефон<sup>*</sup>:</label>
-            <input class="" type="tel" name="phone" id="phone" placeholder="Введите телефон">
+            <input class="feedback-form__input feedback-form__input--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон">
 
             <label class="feedback-form__label" for="email">Электронная почта<sup>*</sup>:</label>
-            <input class="feedback-form__input feedback-form__input--phone" type="email" name="email" id="email" placeholder="Введите e-mail">
+            <input class="feedback-form__input feedback-form__input--email" type="email" name="email" id="email" placeholder="Введите e-mail">
           </fieldset>
           <fieldset class="feedback-form__impression">
             <legend class="feedback-form__legend">Ваше общее впечатление:</legend>
@@ -86,11 +86,11 @@
             <input class="visually-hidden feedback-form__input feedback-form__input--showplace" type="checkbox" name="red-rocks" id="red-rocks">
             <label class="feedback-form__label" for="red-rocks">Красные скалы</label>
           </fieldset>
-          <p class="feedback-form__review">
-            <h2 class="feedback-form__textarea-title">Опишите свои эмоции:</h2>
+          <fieldset class="feedback-form__review">
+            <legend class="feedback-form__legend">Опишите свои эмоции:</legend>
             <label class="feedback-form__label" for="review">Опишите подробно все свои восторги</label>
             <textarea class="feedback-from__textarea" name="review" id="review" placeholder="В свободной форме"></textarea>
-          </p>
+          </fieldset>
           <button class="button feedback-form__button" type="submit">Отправить отзыв</button>
         </form>
       </section>
