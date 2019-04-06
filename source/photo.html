@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Седона</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="102" height="83" alt="Логотип Седоны">
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">Открыть меню</button>
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a href="photo.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+      <div class="page-header__small-logo"><img class="page-header__small-logo-img" src="small-logo.svg" alt="Добро пожаловать в великолепную Седону. А Гранд-Каньон - отстой!:D"></div>
+    </header>
+
+    <main class="page-main">
+      <section class="photo-block">
+        <h2 class="photo-block__title">Фото и видео</h2>
+        <p class="photo-block__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <ul class="photo-block__gallery gallery-list">
+          <li class="gallery-list__item">
+            <a class="gallery-list__full-version-link" href="#"><img class="gallery-list__image" src="" width="" height="" alt="Неродные просторы"></a>
+            <div class="gallery-list__gallery-wrapper">
+              <h3 class="gallery-list__title">Неродные просторы</h3>
+              <p class="gallery-list__author">Автор фото: Борис</p>
+              <button class="gallery-list__button visually-hidden">Нравится</button>
+              <b class="gallery-list__like-counter">1350</b>
+            </div>
+          </li>
+          <li class="gallery-list__item">
+            <a class="gallery-list__full-version-link" href="#"><img class="gallery-list__image" src="" width="" height="" alt="Местная растительность"></a>
+            <div class="gallery-list__gallery-wrapper">
+              <h3 class="gallery-list__title">Местная растительность</h3>
+              <p class="gallery-list__author">Автор фото: Сергей</p>
+              <button class="gallery-list__button visually-hidden">Нравится</button>
+              <b class="gallery-list__like-counter">143</b>
+            </div>
+          </li>
+          <li class="gallery-list__item">
+            <a class="gallery-list__full-version-link" href="#"><img class="gallery-list__image" src="" width="" height="" alt="Дорога на север"></a>
+            <div class="gallery-list__gallery-wrapper">
+              <h3 class="gallery-list__title">Дорога на север</h3>
+              <p class="gallery-list__author">Автор фото: Петр</p>
+              <button class="gallery-list__button visually-hidden">Нравится</button>
+              <b class="gallery-list__like-counter">96</b>
+            </div>
+          </li>
+          <li class="gallery-list__item">
+            <a class="gallery-list__full-version-link" href="#"><img class="gallery-list__image" src="" width="" height="" alt="Мост дьявола"></a>
+            <div class="gallery-list__gallery-wrapper">
+              <h3 class="gallery-list__title">Мость дьявола</h3>
+              <p class="gallery-list__author">Автор фото: Антон</p>
+              <button class="gallery-list__button visually-hidden">Нравится</button>
+              <b class="gallery-list__like-counter">254</b>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="video-block">
+        <h3 class="video-block__title">Все еще сомневатесь?</h3>
+        <p class="video-block__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <img class="video-block__image" src="" width="" height="" alt="Заглушка для видео-плеера">
+        <ul class="video-block__list player-control">
+          <li class="player-control__item">
+            <div class="player-control__progress-bar-wrapper">
+              <div class="player-control__progress-bar"></div>
+              <div class="player-control__progress-marker"></div>
+            </div>
+          </li>
+          <li class="player-control__item">
+            <button class="player-control__playback">Воспроизвести/Реплей</button>
+          </li>
+          <li class="player-control__item">
+            <button class="player-control__subtitles">Включить/выключить субтитры</button>
+          </li>
+          <li class="player-control__item">
+            <button class="player-control__fullscreen">Перейти в полноэкранный режим</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="page-footer__social social">
+        <h2 class="visually-hidden">Социальные контакты</h2>
+        <b class="social__hashtag">#Visitsedona</b>
+        <div class="social__social-links">
+          <ul class="social__social-list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в инстаграмме</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы на ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <p class="social__developed-by">Разработано <a class="social__developer-link" href="https://htmlacademy.ru/">HTML Academy</a></p>
+      </section>
+    </footer>
+  </body>
+</html>
