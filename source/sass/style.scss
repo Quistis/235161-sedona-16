@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #ffffff;
+
+  min-width: 320px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  width: 280px;
+  height: 58px;
+
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+@import "page-header.scss";
+
+@import "main-navigation.scss";
+
+@import "site-list.scss";
+
+@import "page-main.scss";
+
+@import "advantages.scss";
+
+@import "advantages-header.scss";
+
+@import "advantages-list.scss";
+
+@import "feature-list.scss";
+
+@import "hotel-booking.scss";
+
+@import "main-map.scss";
+
+@import "social.scss";

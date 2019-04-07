@@ -1,0 +1,22 @@
+.page-header {
+  background-color: #ffffff;
+
+  margin-bottom: 46px;
+}
+
+.page-header__logo-image {
+  width: 102px;
+  height: 83px;
+}
+
+.page-header__big-logo {
+  width: 100%;
+  min-height: 389px;
+
+  padding-left: 20px;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

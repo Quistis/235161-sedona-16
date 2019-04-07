@@ -4,13 +4,12 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="page-header">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="102" height="83" alt="Логотип Седоны">
       <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">Открыть меню</button>
         <ul class="main-navigation__list site-list">
           <li class="site-list__item site-list__item--active">
             <a href="index.html">Главная</a>
@@ -26,27 +25,29 @@
           </li>
         </ul>
       </nav>
+      <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны">
+      <button class="main-navigation__toggle" type="button">Открыть меню</button>
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-      <div class="page-header__big-logo"><img class="page-header__big-logo-img" src="big-logo.svg" alt="Добро пожаловать в великолепную Седону. А Гранд-Каньон - отстой!:D"></div>
+      <div class="page-header__big-logo"><img class="page-header__big-logo-img" src="img/text-sedona-index.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону. А Гранд-Каньон - отстой!:D"></div>
     </header>
 
     <main class="page-main">
       <section class="advantages">
         <header class="advantages-header">
           <h2 class="visually-hidden">Почему посетить Седону было бы круто</h2>
-          <b class="advantages__slogan">Седона — небольшой городок в Аризоне,<br>  заслуживающий большего!</b>
-          <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <b class="advantages-header__slogan">Седона — небольшой городок в Аризоне,<br>  заслуживающий большего!</b>
+          <p class="advantages-header__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </header>
         <ol class="advantages-list">
-          <li class="advantages-list__item">
+          <li class="advantages-list__item advantages-list__item--blue-background">
             <div class="advantages-list__reason-wrapper">
               <h3 class="advantages-list__title">Настоящий городок</h3>
               <p class="advatages-list__reason-number">— №1 —</p>
-              <p class="advantages-list__reason">Седона не аттракцион для туристов,<br> там течёт своя жизнь</p>
+              <p class="advantages-list__reason advantages-list__reason--white-text">Седона не аттракцион для туристов,<br> там течёт своя жизнь</p>
             </div>
-            <img class="advantages-list__image" src="advantages-town.jpg" width="320" height="260" alt="Настоящий городок">
+            <img class="advantages-list__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Настоящий городок">
           </li>
-          <li class="advantages-list__item">
+          <li class="advantages-list__item advantages-list__item--white-background">
             <ul class="advantages-list__item-feature feature-list">
               <li class="feature-list__item feature-list__item--housing">
                 <h3 class="feature-list__title">Жилье</h3>
@@ -62,13 +63,13 @@
               </li>
             </ul>
           </li>
-          <li class="advantages-list__item">
+          <li class="advantages-list__item advantages-list__item--blue-background">
             <div class="advantages-list__reason-wrapper">
               <h3 class="advantages-list__title">Там есть мост дьявола</h3>
               <p class="advatages-list__reason-number">— №2 —</p>
-              <p class="advantages-list__reason">Да, по нему можно пройти! Если вы<br> осмелитесь, конечно</p>
+              <p class="advantages-list__reason advantages-list__reason--white-text">Да, по нему можно пройти! Если вы<br> осмелитесь, конечно</p>
             </div>
-            <img class="advantages-list__image" src="advantages-devils-bridge.jpg" width="320" height="260" alt="Мост дьявола">
+            <img class="advantages-list__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
           </li>
           <li class="advantages-list__item">
             <div class="advantages-list__reason-wrapper">
@@ -96,11 +97,11 @@
       <section class="hotel-booking">
         <h2 class="hotel-booking__title">Заинтересовались?</h2>
         <p class="hotel-booking__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a class="button hotel-booking__button" href="#"></a>
+        <a class="button hotel-booking__button" href="#">Найти гостиницу</a>
       </section>
       <section class="main-map">
         <h2 class="visually-hidden">Карта</h2>
-        <iframe class="footer-map__widget" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104352.468948204!2d-111.67817086214654!3d35.181187291174986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8ef7da2e2631%3A0x8e1f3ca1cedbb300!2sFlagstaff%2C+AZ%2C+USA!5e0!3m2!1sen!2skz!4v1554326302110!5m2!1sen!2skz" width="320" height="350" allowfullscreen aria-label="Аризона, США, Флагстафф"></iframe>
+        <iframe class="footer-map__widget" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104352.468948204!2d-111.67817086214654!3d35.181187291174986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8ef7da2e2631%3A0x8e1f3ca1cedbb300!2sFlagstaff%2C+AZ%2C+USA!5e0!3m2!1sen!2skz!4v1554326302110!5m2!1sen!2skz" width="100%" height="350" allowfullscreen aria-label="Аризона, США, Флагстафф"></iframe>
       </section>
     </main>
 

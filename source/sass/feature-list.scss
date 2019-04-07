@@ -1,0 +1,29 @@
+.feature-list {
+  list-style: none;
+
+  text-align: left;
+
+  padding: 0;
+
+  background-color: #ffffff;
+}
+
+.feature-list__item {
+
+}
+
+.feature-list__title {
+  font-size: 21px;
+  line-height: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.feature-list__description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+}

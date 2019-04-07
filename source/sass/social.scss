@@ -1,0 +1,36 @@
+.social {
+  background-color: #ffffff;
+
+  text-align: center;
+}
+
+.social__hashtag {
+  display: block;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+
+  margin-bottom: 40px;
+}
+
+.social__social-list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.social__developed-by {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.social__developer-link {
+  color: #000000;
+}
