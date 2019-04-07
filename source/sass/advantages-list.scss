@@ -14,6 +14,7 @@
     background-color: #81b3d2;
     color: #ffffff;
   }
+
   &--white-background {
     background-color: #ffffff;
   }
@@ -42,9 +43,10 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #333333;
-    &--white-text {
-      color: #ffffff;
-    }
+
+  &--white-text {
+    color: #ffffff;
+  }
 }
 
 .advantages-list__image {
