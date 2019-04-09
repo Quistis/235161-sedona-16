@@ -7,8 +7,8 @@
 .social__hashtag {
   display: block;
 
-  font-size: 21px;
-  line-height: 26px;
+  font-size: $titles-font-size;
+  line-height: $titles-line-height;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
@@ -17,14 +17,11 @@
 }
 
 .social__social-list {
-  list-style: none;
-
-  margin: 0;
-  padding: 0;
+  @include list-reset;
 }
 
 .social__developed-by {
-  font-size: 14px;
+  font-size: $descriptions-font-size;
   line-height: 26px;
   font-weight: 400;
   text-transform: uppercase;

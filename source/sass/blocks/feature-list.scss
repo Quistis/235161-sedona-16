@@ -1,24 +1,22 @@
 .feature-list {
-  list-style: none;
+  @include list-reset;
 
   text-align: left;
-
-  padding: 0;
 
   background-color: #ffffff;
 }
 
 .feature-list__title {
-  font-size: 21px;
-  line-height: 15px;
+  font-size: $titles-font-size;
+  line-height: $titles-line-height;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
 }
 
 .feature-list__description {
-  font-size: 14px;
-  line-height: 21px;
+  font-size: $descriptions-font-size;
+  line-height: $descriptions-line-height;
   font-weight: 400;
   text-transform: uppercase;
   color: #333333;

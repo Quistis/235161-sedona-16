@@ -1,0 +1,23 @@
+.video-block {
+  background-color: #ffffff;
+
+  text-align: center;
+
+  padding-bottom: 49px;
+}
+
+.video-block__title {
+  font-size: $titles-font-size;
+  line-height: $titles-line-height;
+  font-weight: 700;
+}
+
+.video-block__description {
+  display: block;
+
+  font-size: $descriptions-font-size;
+  line-height: 24px;
+  font-weight: 400;
+
+  padding-bottom: 40px;
+}

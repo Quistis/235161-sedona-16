@@ -1,5 +1,5 @@
 .site-list {
-  list-style: none;
+  @include list-reset;
 
   text-align: center;
 

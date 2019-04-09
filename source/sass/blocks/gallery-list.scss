@@ -1,0 +1,28 @@
+.gallery-list {
+  @include list-reset;
+
+  text-align: left;
+}
+
+.gallery-list__full-version-link {
+  display: block;
+
+  padding-top: 22px;
+}
+
+.gallery-list__title {
+  font-size: $titles-font-size;
+  line-height: $titles-line-height;
+  font-weight: 700;
+}
+
+.gallery-list__author {
+  font-size: $descriptions-font-size;
+  line-height: 24px;
+  font-weight: 400px;
+  text-transform: none;
+  color: #333333;
+}
+.gallery-list__like-counter {
+  padding-left: 35px;
+}
