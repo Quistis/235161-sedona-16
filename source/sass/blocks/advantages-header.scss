@@ -1,5 +1,5 @@
 .advantages-header {
-  background-color: #ffffff;
+  background-color: $bg-white;
 
   text-align: center;
 
@@ -10,15 +10,13 @@
 }
 
 .advantages-header__slogan {
-  font-size: $titles-font-size;
-  line-height: 26px;
+  font-size: $font-size-big;
+  line-height: $line-height-big;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 .advantages-header__intro {
-  font-size: $descriptions-font-size;
-  line-height: 26px;
+  font-size: $font-size-medium;
+  line-height: $line-height-big;
   font-weight: 400;
-  text-transform: uppercase;
 }

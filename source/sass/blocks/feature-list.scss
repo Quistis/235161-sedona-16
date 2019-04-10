@@ -3,21 +3,19 @@
 
   text-align: left;
 
-  background-color: #ffffff;
+  background-color: $bg-white;
 }
 
 .feature-list__title {
-  font-size: $titles-font-size;
-  line-height: $titles-line-height;
+  font-size: $font-size-big;
+  line-height: $line-height-big;
   font-weight: 700;
-  text-transform: uppercase;
-  color: #000000;
+  color: $text-black;
 }
 
 .feature-list__description {
-  font-size: $descriptions-font-size;
-  line-height: $descriptions-line-height;
+  font-size: $font-size-medium;
+  line-height: $line-height-small;
   font-weight: 400;
-  text-transform: uppercase;
-  color: #333333;
+  color: $text-lightgrey;
 }

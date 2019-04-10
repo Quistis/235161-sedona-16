@@ -1,23 +1,21 @@
-.video-block {
+.feedback-intro {
   background-color: $bg-white;
 
   text-align: center;
 
-  padding-bottom: 49px;
+  padding-top: 40px;
 }
 
-.video-block__title {
+.feedback-intro__title {
   font-size: $font-size-big;
   line-height: $line-height-big;
   font-weight: 700;
+  color: $text-black
 }
 
-.video-block__description {
-  display: block;
-
+.feedback-intro__description {
   font-size: $font-size-medium;
   line-height: $line-height-medium;
   font-weight: 400;
-
-  padding-bottom: 40px;
+  color: $text-lightgrey;
 }

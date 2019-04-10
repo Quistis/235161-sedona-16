@@ -4,24 +4,24 @@
 
   text-align: center;
 
-  background-color: #ffffff;
+  background-color: $bg-white;
 
   padding-top: 40px;
 }
 
 .photo-block__title {
-  font-size: $titles-font-size;
-  line-height: $titles-line-height;
+  font-size: $font-size-big;
+  line-height: $line-height-big;
   font-weight: 700;
 }
 
 .photo-block__description {
   display: block;
 
-  font-size: $descriptions-font-size;
-  line-height: 24px;
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
   font-weight: 400px;
-  color: #333333;
+  color: $text-lightgrey;
 
   padding-bottom: 30px;
 }

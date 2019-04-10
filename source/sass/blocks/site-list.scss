@@ -3,7 +3,7 @@
 
   text-align: center;
 
-  background-color: #81b3d2;
+  background-color: $bg-lightblue;
 }
 
 .site-list__item {
@@ -11,5 +11,5 @@
 }
 
 .site-list__item a {
-  color: #ffffff;
+  color: $text-white;
 }

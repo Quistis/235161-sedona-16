@@ -8,10 +8,11 @@
 }
 
 .page-header__big-logo {
+  display: flex;
+  justify-content: center;
+
   width: 100%;
   min-height: 389px;
-
-  padding-left: 20px;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -20,6 +21,9 @@
 }
 
 .page-header__small-logo {
+  display: flex;
+  justify-content: center;
+
   width: 100%;
   min-height: 160px;
 
@@ -29,13 +33,6 @@
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
-}
-
-.page-header__big-logo-img {
-  padding-top: 90px;
-  padding-right: 20px;
-  padding-bottom: 85px;
-  padding-left: 20px;
 }
 
 .page-header__small-logo-img {

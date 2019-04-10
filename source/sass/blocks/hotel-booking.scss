@@ -1,5 +1,5 @@
 .hotel-booking {
-  background-color: #ffffff;
+  background-color: $bg-white;
 
   text-align: center;
 
@@ -12,19 +12,17 @@
 }
 
 .hotel-booking__title {
-  font-size: $titles-font-size;
-  line-height: $titles-line-height;
+  font-size: $font-size-big;
+  line-height: $line-height-big;
   font-weight: 700;
-  text-transform: uppercase;
-  color: #000000;
+  color: $text-black;
 }
 
 .hotel-booking__description {
-  font-size: $descriptions-font-size;
-  line-height: 24px;
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
   font-weight: 400;
-  text-transform: uppercase;
-  color: #333333;
+  color: $text-lightgrey;
 
   margin-bottom: 40px;
 }

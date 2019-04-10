@@ -9,7 +9,7 @@ body {
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #000000;
+  color: $text-black;
 
   background-color: #ffffff;
 }
@@ -31,4 +31,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
