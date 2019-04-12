@@ -1,0 +1,21 @@
+.feedback-intro {
+  background-color: $bg-white;
+
+  text-align: center;
+
+  padding-top: 40px;
+}
+
+.feedback-intro__title {
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+  font-weight: 700;
+  color: $text-black;
+}
+
+.feedback-intro__description {
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
+  font-weight: 400;
+  color: $text-lightgrey;
+}

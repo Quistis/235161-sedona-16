@@ -1,0 +1,21 @@
+.feature-list {
+  @include list-reset;
+
+  text-align: left;
+
+  background-color: $bg-white;
+}
+
+.feature-list__title {
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+  font-weight: 700;
+  color: $text-black;
+}
+
+.feature-list__description {
+  font-size: $font-size-medium;
+  line-height: $line-height-small;
+  font-weight: 400;
+  color: $text-lightgrey;
+}

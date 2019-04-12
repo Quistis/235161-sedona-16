@@ -1,0 +1,22 @@
+.advantages-header {
+  background-color: $bg-white;
+
+  text-align: center;
+
+  padding-top: 46px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+}
+
+.advantages-header__slogan {
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+  font-weight: 700;
+}
+
+.advantages-header__intro {
+  font-size: $font-size-medium;
+  line-height: $line-height-big;
+  font-weight: 400;
+}

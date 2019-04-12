@@ -1,0 +1,43 @@
+.page-header {
+  background-color: #ffffff;
+}
+
+.page-header__logo-image {
+  width: 102px;
+  height: 83px;
+}
+
+.page-header__big-logo {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 389px;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-header__small-logo {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 160px;
+
+  padding-left: 20px;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.page-header__small-logo-img {
+  padding-top: 52px;
+  padding-right: 30px;
+  padding-bottom: 67px;
+  padding-left: 30px;
+}

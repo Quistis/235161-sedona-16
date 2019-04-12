@@ -1,0 +1,15 @@
+.site-list {
+  @include list-reset;
+
+  text-align: center;
+
+  background-color: $bg-lightblue;
+}
+
+.site-list__item {
+  text-align: center;
+}
+
+.site-list__item a {
+  color: $text-white;
+}

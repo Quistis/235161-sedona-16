@@ -1,0 +1,140 @@
+.feedback-form__full-name {
+  border: none;
+
+  padding: 0;
+
+  margin-bottom: 25px;
+}
+
+.feedback-form__legend {
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+  font-weight: 700;
+  color: $text-black;
+
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.feedback-form__label {
+  font-size: $font-size-medium;
+  line-height: $line-height-big;
+  font-weight: 400;
+  color: $text-lightgrey;
+
+  text-align: left;
+
+  padding-right: 10px;
+}
+
+.feedback-form__input {
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+  color: $text-black;
+
+  text-align: left;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 21px;
+
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.feedback-form__input--fullname {
+  min-width: 230px;
+}
+
+.feedback-form__input--surname {
+  min-width: 192px;
+}
+
+.feedback-form__input--patronymic {
+  min-width: 194px;
+}
+
+.feedback-form__contacts {
+  border: none;
+
+  padding: 0;
+
+  margin-bottom: 25px;
+}
+
+.feedback-form__label--contacs {
+  padding-left: 20px;
+}
+
+.feedback-form__input--phone {
+  min-width: 280px;
+}
+
+.feedback-form__input--email {
+  min-width: 280px;
+}
+
+.feedback-form__impression {
+  display: block;
+  border: none;
+
+  padding: 0;
+
+  margin-bottom: 25px;
+}
+
+.feedback-form__label--impression {
+  margin-left: 70px;
+}
+
+.feedback-form__input--impression + .feedback-form__label--impression {
+  display: block;
+
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+  font-weight: 700;
+  text-transform: none;
+  color: $text-black;
+
+  margin-bottom: 20px;
+}
+
+.feedback-form__showplace {
+  display: block;
+  border: none;
+
+  padding: 0;
+
+  margin-bottom: 25px;
+}
+
+.feedback-form__label--showplace {
+  margin-left: 70px;
+}
+
+.feedback-form__input--showplace + .feedback-form__label--showplace {
+  display: block;
+
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+  font-weight: 700;
+  text-transform: none;
+  color: $text-black;
+
+  margin-bottom: 20px;
+}
+
+.feedback-form__review {
+  display: block;
+  border: none;
+
+  padding: 0;
+
+  margin-bottom: 25px;
+}
+
+.feedback-form__textarea {
+  width: 280px;
+  min-height: 160px;
+}
