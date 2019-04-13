@@ -1,8 +1,21 @@
 .page-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
   background-color: #ffffff;
 }
 
+.page-header__logo-link {
+  min-height: 56px;
+}
+
 .page-header__logo-image {
+  position: absolute;
+
+  top: 33.3%;
+  left: 47.37%;
+
   width: 102px;
   height: 83px;
 }

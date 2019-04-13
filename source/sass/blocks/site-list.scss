@@ -11,5 +11,9 @@
 }
 
 .site-list__item a {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 6px;
+
   color: $text-white;
 }

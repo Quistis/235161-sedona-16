@@ -1,9 +1,19 @@
 .feature-list {
   @include list-reset;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-bottom: 27px;
+
   text-align: left;
 
   background-color: $bg-white;
+}
+
+.feature-list__item {
+  margin-bottom: 11px;
 }
 
 .feature-list__title {
@@ -11,6 +21,9 @@
   line-height: $line-height-big;
   font-weight: 700;
   color: $text-black;
+
+  margin: 0;
+  padding-top: 15px;
 }
 
 .feature-list__description {
@@ -18,4 +31,7 @@
   line-height: $line-height-small;
   font-weight: 400;
   color: $text-lightgrey;
+
+  margin: 0;
+  padding-top: 16px;
 }
