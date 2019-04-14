@@ -1,4 +1,8 @@
 .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
   background-color: $bg-white;
 
   text-align: center;
@@ -7,16 +11,18 @@
 .social__hashtag {
   display: block;
 
-  font-size: $font-size-big;
+  font-size: $font-size-largest;
   line-height: $line-height-big;
   font-weight: 700;
   color: $text-black;
 
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .social__social-list {
   @include list-reset;
+
+  margin-bottom: 20px;
 }
 
 .social__developed-by {

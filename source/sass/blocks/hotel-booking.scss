@@ -3,7 +3,6 @@
 
   text-align: center;
 
-  padding-top: 30px;
   padding-right: 20px;
   padding-bottom: 35px;
   padding-left: 20px;
@@ -12,7 +11,7 @@
 }
 
 .hotel-booking__title {
-  font-size: $font-size-big;
+  font-size: $font-size-largest;
   line-height: $line-height-big;
   font-weight: 700;
   color: $text-black;
@@ -24,5 +23,5 @@
   font-weight: 400;
   color: $text-lightgrey;
 
-  margin-bottom: 40px;
+  margin-bottom: 51px;
 }

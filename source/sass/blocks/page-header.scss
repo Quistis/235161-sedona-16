@@ -6,16 +6,23 @@
   background-color: #ffffff;
 }
 
+.page-header__logo-wrapper {
+  width: 320px;
+  height: 56px;
+}
+
 .page-header__logo-link {
+  position: absolute;
+
+  top: 33.3%;
+  left: 50%;
+
+  transform: translateX(-50%);
+
   min-height: 56px;
 }
 
 .page-header__logo-image {
-  position: absolute;
-
-  top: 33.3%;
-  left: 47.37%;
-
   width: 102px;
   height: 83px;
 }
