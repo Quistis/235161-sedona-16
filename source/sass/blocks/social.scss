@@ -35,3 +35,15 @@
 .social__developer-link {
   color: $text-black;
 }
+
+.social__developer-icon {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    flex-direction: row;
+
+    width: 768px;
+  }
+}

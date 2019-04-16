@@ -25,3 +25,14 @@
   line-height: $line-height-big;
   font-weight: 400;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages-header {
+    padding-bottom: 37px;
+  }
+
+  .advantages-header__slogan {
+    font-size: $font-size-largest;
+    margin-top: 50px;
+  }
+}

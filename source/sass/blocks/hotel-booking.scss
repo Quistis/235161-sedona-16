@@ -25,3 +25,30 @@
 
   margin-bottom: 51px;
 }
+
+@media (min-width: $tablet-width) {
+  .hotel-booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hotel-booking__title {
+    display: block;
+
+    font-size: $font-size-even-larger;
+
+    margin-top: 10px;
+  }
+
+  .hotel-booking__description {
+    display: block;
+
+    width: 450px;
+  }
+
+  .hotel-booking__button {
+    width: 458px;
+  }
+}

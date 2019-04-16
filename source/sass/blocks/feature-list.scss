@@ -23,7 +23,7 @@
   color: $text-black;
 
   margin: 0;
-  padding-top: 15px;
+  margin-top: 15px;
 }
 
 .feature-list__description {
@@ -33,5 +33,46 @@
   color: $text-lightgrey;
 
   margin: 0;
-  padding-top: 16px;
+  margin-top: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .feature-list {
+    flex-direction: row;
+
+    width: 768px;
+    min-height: 303px;
+
+    text-align: center;
+  }
+
+  .feature-list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 256px;
+  }
+
+  .feature-list__title {
+    font-size: $font-size-largest;
+  }
+
+  .feature-list__description {
+    width: 181px;
+  }
+
+  .feature-list__item--housing {
+    order: 1;
+  }
+
+  .feature-list__item--souvenir {
+    order: 3;
+  }
+
+  .feature-list__item--food {
+    order: 2;
+  }
 }

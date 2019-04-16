@@ -1,3 +1,10 @@
 .page-footer {
   background-color: $bg-white;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    min-width: 768px;
+    margin: 0 auto;
+  }
+}
