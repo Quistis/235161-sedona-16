@@ -47,9 +47,14 @@
   font-size: $font-size-medium;
   line-height: $line-height-small;
   font-weight: 400;
+  color: $text-lightgrey;
 
   padding-top: 8px;
   margin: 0;
+
+  &--white-text {
+    color: $text-white;
+  }
 }
 
 .advantages-list__reason {
@@ -86,10 +91,12 @@
   }
 
   .advantages-list__item {
+    padding-top: 0;
+  }
+
+  .advantages-list__item--small {
     width: 256px;
     min-height: 256px;
-
-    padding-top: 0;
   }
 
   .advantages-list__item--blue-background {
