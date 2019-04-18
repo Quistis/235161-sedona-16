@@ -56,3 +56,14 @@
     color: $text-black;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    justify-content: space-around;
+    width: 1200px;
+  }
+
+  .site-list__item {
+    min-width: 240px;
+  }
+}

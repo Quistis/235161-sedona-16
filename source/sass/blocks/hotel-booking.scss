@@ -7,7 +7,7 @@
   padding-bottom: 35px;
   padding-left: 20px;
 
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .hotel-booking__title {
@@ -32,6 +32,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    margin-bottom: 22px;
   }
 
   .hotel-booking__title {
@@ -50,5 +52,11 @@
 
   .hotel-booking__button {
     width: 458px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hotel-booking {
+    margin-bottom: 34px;
   }
 }

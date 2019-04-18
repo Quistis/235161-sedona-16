@@ -76,3 +76,17 @@
     order: 2;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .feature-list {
+    width: 1200px;
+  }
+
+  .feature-list__item {
+    width: 400px;
+  }
+
+  .feature-list__description {
+    width: 290px;
+  }
+}

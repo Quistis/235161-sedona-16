@@ -1,10 +1,19 @@
 .page-footer {
   background-color: $bg-white;
+
+  padding-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     min-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    min-width: 1200px;
     margin: 0 auto;
   }
 }
