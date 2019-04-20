@@ -46,21 +46,12 @@
   justify-content: center;
 
   width: 100%;
-  min-height: 160px;
-
-  padding-left: 20px;
+  min-height: 158px;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
-}
-
-.page-header__small-logo-img {
-  padding-top: 52px;
-  padding-right: 30px;
-  padding-bottom: 67px;
-  padding-left: 30px;
 }
 
 @media (min-width: $tablet-width) {

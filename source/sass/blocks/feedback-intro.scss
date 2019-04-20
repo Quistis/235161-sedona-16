@@ -3,7 +3,8 @@
 
   text-align: center;
 
-  padding-top: 40px;
+  margin-top: 37px;
+  margin-bottom: 36px;
 }
 
 .feedback-intro__title {
@@ -11,6 +12,9 @@
   line-height: $line-height-big;
   font-weight: 700;
   color: $text-black;
+
+  margin: 0;
+  margin-bottom: 26px;
 }
 
 .feedback-intro__description {
