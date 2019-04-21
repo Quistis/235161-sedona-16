@@ -23,3 +23,24 @@
   font-weight: 400;
   color: $text-lightgrey;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback-intro {
+    width: 648px;
+
+    margin: 0 auto;
+    margin-top: 65px;
+    margin-bottom: 73px;
+  }
+
+  .feedback-intro__title {
+    font-size: $font-size-even-larger;
+
+    margin-bottom: 30px;
+  }
+
+  .feedback-intro__description {
+    width: 447px;
+    margin: 0 auto;
+  }
+}

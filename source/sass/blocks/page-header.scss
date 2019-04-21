@@ -70,6 +70,15 @@
   .page-header__big-logo {
     min-height: 518px;
   }
+
+  .page-header__small-logo {
+    min-height: 300px;
+  }
+
+  .page-header__small-logo-img {
+    width: 458px;
+    height: auto;
+  }
 }
 
 @media (min-width: $desktop-width) {

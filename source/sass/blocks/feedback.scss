@@ -3,3 +3,9 @@
 
   margin-bottom: 76px;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    width: 768px;
+  }
+}
