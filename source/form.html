@@ -84,23 +84,26 @@
           <fieldset class="feedback-form__showplace">
             <legend class="feedback-form__legend feedback-form__legend--showplace">Посещенные достопримечательности:</legend>
             <span class="visually-hidden">Какие достопримечательности вы успели посетить?</span>
-            <input class="visually-hidden feedback-form__input feedback-form__input--showplace" type="checkbox" name="devils-bridge" id="devils-bridge" checked>
-            <label class="feedback-form__label feedback-form__label--showplace" for="devils-bridge">Мост Дьявола</label>
+            <div class="feedback-form__showplace-wrapper">
+              <input class="visually-hidden feedback-form__input feedback-form__input--showplace" type="checkbox" name="devils-bridge" id="devils-bridge" checked>
+              <label class="feedback-form__label feedback-form__label--showplace" for="devils-bridge">Мост Дьявола</label>
 
-            <input class="visually-hidden feedback-form__input feedback-form__input--showplace" type="checkbox" name="bell-mountain" id="bell-mountain" checked>
-            <label class="feedback-form__label feedback-form__label--showplace" for="bell-mountain">Гора-Колокол</label>
+              <input class="visually-hidden feedback-form__input feedback-form__input--showplace" type="checkbox" name="bell-mountain" id="bell-mountain" checked>
+              <label class="feedback-form__label feedback-form__label--showplace" for="bell-mountain">Гора-Колокол</label>
 
-            <input class="visually-hidden feedback-form__input feedback-form__input--showplace" type="checkbox" name="slide-park" id="slide-park" checked>
-            <label class="feedback-form__label feedback-form__label--showplace" for="slide-park">Слайд-парк</label>
+              <input class="visually-hidden feedback-form__input feedback-form__input--showplace" type="checkbox" name="slide-park" id="slide-park" checked>
+              <label class="feedback-form__label feedback-form__label--showplace" for="slide-park">Слайд-парк</label>
 
-            <input class="visually-hidden feedback-form__input feedback-form__input--showplace" type="checkbox" name="red-rocks" id="red-rocks">
-            <label class="feedback-form__label feedback-form__label--showplace" for="red-rocks">Красные скалы</label>
+              <input class="visually-hidden feedback-form__input feedback-form__input--showplace" type="checkbox" name="red-rocks" id="red-rocks">
+              <label class="feedback-form__label feedback-form__label--showplace" for="red-rocks">Красные скалы</label>
+            </div>
           </fieldset>
           <fieldset class="feedback-form__review">
             <legend class="feedback-form__legend feedback-form__legend--review">Опишите свои эмоции:</legend>
             <textarea class="feedback-form__textarea" name="review" id="review" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="button feedback-form__button" type="submit">Отправить отзыв</button>
+          <p class="feedback-form__required-fields">* — обязательные поля</p>
         </form>
       </section>
     </main>

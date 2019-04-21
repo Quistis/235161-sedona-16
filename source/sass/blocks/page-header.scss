@@ -1,5 +1,4 @@
 .page-header {
-  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -7,6 +6,7 @@
 }
 
 .page-header__logo-wrapper {
+  position: relative;
   min-width: 320px;
   height: 56px;
 }
@@ -14,7 +14,7 @@
 .page-header__logo-link {
   position: absolute;
 
-  top: 33.3%;
+  top: 0;
   left: 50%;
 
   transform: translateX(-50%);
@@ -64,7 +64,7 @@
   }
 
   .page-header__logo-link {
-    top: 0;
+    top: -56px;
   }
 
   .page-header__big-logo {
