@@ -30,7 +30,7 @@
 
     margin: 0 auto;
     margin-top: 65px;
-    margin-bottom: 73px;
+    margin-bottom: 74px;
   }
 
   .feedback-intro__title {
@@ -42,5 +42,18 @@
   .feedback-intro__description {
     width: 447px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-intro {
+    width: 960px;
+
+    margin-top: 113px;
+    margin-bottom: 59px;
+  }
+
+  .feedback-intro__title {
+    margin-bottom: 30px;
   }
 }

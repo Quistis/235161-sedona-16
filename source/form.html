@@ -63,11 +63,17 @@
           <fieldset class="feedback-form__contacts">
             <legend class="feedback-form__legend feedback-form__legend--contacts">Контактная информация:</legend>
             <span class="visually-hidden">Введите ваш телефон и e-mail</span>
-            <label class="feedback-form__label feedback-form__label--contacs" for="phone">Контактный телефон<sup>*</sup>:</label>
-            <input class="feedback-form__input feedback-form__input--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон">
-
-            <label class="feedback-form__label feedback-form__label--contacs" for="email">Электронная почта<sup>*</sup>:</label>
-            <input class="feedback-form__input feedback-form__input--email" type="email" name="email" id="email" placeholder="Введите e-mail">
+            <div class="feedback-form__contacts-wrapper">
+              <div class="feedback-form__phone-wrapper">
+                <label class="feedback-form__label feedback-form__label--contacts" for="phone">Контактный телефон<sup>*</sup>:</label>
+                <label class="feedback-form__label feedback-form__label--diff-contacts" for="phone">Телефон<sup>*</sup>:</label>
+                <input class="feedback-form__input feedback-form__input--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон">
+              </div>
+              <div class="feedback-form__email-wrapper">
+                <label class="feedback-form__label feedback-form__label--email" for="email">Электронная почта<sup>*</sup>:</label>
+                <input class="feedback-form__input feedback-form__input--email" type="email" name="email" id="email" placeholder="Введите e-mail">
+              </div>
+            </div>
           </fieldset>
           <fieldset class="feedback-form__impression">
             <legend class="feedback-form__legend feedback-form__legend--impression">Ваше общее впечатление:</legend>
