@@ -1,14 +1,14 @@
 .feedback {
   background-color: $bg-white;
 
-  margin-bottom: 73px;
+  padding-bottom: 73px;
 }
 
 @media (min-width: $tablet-width) {
   .feedback {
     width: 768px;
 
-    margin-bottom: 93px;
+    padding-bottom: 93px;
   }
 }
 
@@ -16,6 +16,6 @@
   .feedback {
     width: 1200px;
 
-    margin-bottom: 99px;
+    padding-bottom: 99px;
   }
 }

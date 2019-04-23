@@ -1,11 +1,17 @@
 .main-map {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .main-map {
     min-height: 350px;
 
-    margin-bottom: 27px;
+    padding-bottom: 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-map {
+    padding-bottom: 23px;
   }
 }

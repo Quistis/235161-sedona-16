@@ -54,7 +54,7 @@
   margin-left: 12px;
 
   border: none;
-  background-color: #f2f2f2;
+  background-color: $bg-whitegreyish;
 
   &::placeholder {
     color: inherit;
@@ -105,10 +105,6 @@
   margin-bottom: 7px;
 }
 
-.feedback-form__label--diff-contacts {
-  display: none;
-}
-
 .feedback-form__phone-wrapper {
   position: relative;
 
@@ -128,7 +124,7 @@
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 22px 20px;
-  background-color: #e6e6e6;
+  background-color: $bg-darkgrey;
 }
 
 .feedback-form__input--phone {
@@ -136,6 +132,8 @@
 
   margin-left: 17px;
   margin-bottom: 12px;
+
+  padding-right: 57px;
 }
 
 .feedback-form__email-wrapper {
@@ -157,13 +155,15 @@
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
   background-position: 22px 21px;
-  background-color: #e6e6e6;
+  background-color: $bg-darkgrey;
 }
 
 .feedback-form__input--email {
   min-width: 280px;
 
   margin-left: 17px;
+
+  padding-right: 57px;
 }
 
 .feedback-form__impression {
@@ -209,9 +209,9 @@
   width: 55px;
   height: 55px;
 
-  border: 2px solid #f2f2f2;
+  border: 2px solid $bg-whitegreyish;
   border-radius: 50%;
-  background-color: #f2f2f2;
+  background-color: $bg-whitegreyish;
 }
 
 .feedback-form__input--impression:checked + .feedback-form__label--impression::after {
@@ -224,9 +224,9 @@
   width: 22px;
   height: 22px;
 
-  border: 1px solid $text-lightgrey;
+  border: 1px solid $bg-darkergrey;
   border-radius: 50%;
-  background-color: $text-lightgrey;
+  background-color: $bg-darkergrey;
 }
 
 .feedback-form__showplace {
@@ -273,7 +273,7 @@
   height: 55px;
 
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: $bg-whitegreyish;
 }
 
 
@@ -322,7 +322,7 @@
   margin-left: 18px;
 
   border: none;
-  background-color: #f2f2f2;
+  background-color: $bg-whitegreyish;
 
   &::placeholder {
     color: inherit;
@@ -410,7 +410,7 @@
     width: 126px;
     height: 1px;
 
-    background-color: #dbdbdb;
+    background-color: $bg-darkishgrey;
   }
 
   .feedback-form__legend--contacts::after {
@@ -423,7 +423,7 @@
     width: 126px;
     height: 1px;
 
-    background-color: #dbdbdb;
+    background-color: $bg-darkishgrey;
   }
 
   .feedback-form__label--contacts,
@@ -465,7 +465,7 @@
     width: 1px;
     height: 292px;
 
-    background-color: #dbdbdb;
+    background-color: $bg-darkishgrey;
   }
 
   .feedback-form__legend--impression {
@@ -644,15 +644,18 @@
   }
 
   .feedback-form__label--contacts {
-    display: none;
-  }
-
-  .feedback-form__label--diff-contacts {
     display: block;
 
     width: 70px;
 
     margin-left: 0;
+    margin-bottom: 0;
+
+    padding-left: 0;
+  }
+
+  .feedback-form__label-camouflage {
+    display: none;
   }
 
   .feedback-form__label--email {
@@ -696,6 +699,10 @@
 
   .feedback-form__showplace-wrapper {
     width: 960px;
+  }
+
+  .feedback-form__showplace-wrapper .feedback-form__label--showplace:last-child {
+    margin-left: 60px;
   }
 
   .feedback-form__review {

@@ -15,6 +15,9 @@
   line-height: $line-height-big;
   font-weight: 700;
   color: $text-black;
+
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .hotel-booking__description {
@@ -23,7 +26,12 @@
   font-weight: 400;
   color: $text-lightgrey;
 
+  margin: 0;
   margin-bottom: 51px;
+}
+
+.hotel-booking__text-transposition {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,13 +49,20 @@
 
     font-size: $font-size-even-larger;
 
-    margin-top: 10px;
+    margin-top: 27px;
+    margin-bottom: 30px;
   }
 
   .hotel-booking__description {
     display: block;
 
     width: 450px;
+
+    margin-bottom: 42px;
+  }
+
+  .hotel-booking__text-transposition {
+    display: block;
   }
 
   .hotel-booking__button {
@@ -58,5 +73,13 @@
 @media (min-width: $desktop-width) {
   .hotel-booking {
     margin-bottom: 34px;
+  }
+
+  .hotel-booking__description {
+    margin-bottom: 47px;
+  }
+
+  .advantages-list__reason-wrapper--different-paddings {
+    padding-top: 32px;
   }
 }
