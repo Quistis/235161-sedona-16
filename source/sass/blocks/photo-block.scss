@@ -1,27 +1,34 @@
 .photo-block {
   min-width: 280px;
-  margin: 20px auto;
+  margin: 0 20px;
+  margin-bottom: 33px;
+
+  padding-top: 37px;
 
   text-align: center;
 
   background-color: $bg-white;
-
-  padding-top: 40px;
 }
 
 .photo-block__title {
   font-size: $font-size-big;
   line-height: $line-height-big;
   font-weight: 700;
+
+  margin: 0;
+  margin-bottom: 26px;
 }
 
 .photo-block__description {
-  display: block;
-
   font-size: $font-size-medium;
   line-height: $line-height-medium;
   font-weight: 400px;
   color: $text-lightgrey;
 
-  padding-bottom: 30px;
+  display: block;
+
+  width: 275px;
+
+  margin: 0 auto;
+  margin-bottom: 28px;
 }

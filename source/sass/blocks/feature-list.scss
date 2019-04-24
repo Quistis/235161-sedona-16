@@ -16,6 +16,10 @@
   margin-bottom: 11px;
 }
 
+.feature-list__text-transposition {
+  display: none;
+}
+
 .feature-list__title {
   font-size: $font-size-big;
   line-height: $line-height-big;
@@ -31,6 +35,8 @@
   line-height: $line-height-small;
   font-weight: 400;
   color: $text-lightgrey;
+
+  width: 208px;
 
   margin: 0;
   margin-top: 16px;
@@ -89,6 +95,10 @@
 
   .feature-list__item {
     width: 400px;
+  }
+
+  .feature-list__text-transposition {
+    display: block;
   }
 
   .feature-list__description {

@@ -1,19 +1,32 @@
 .gallery-list {
   @include list-reset;
 
+  display: flex;
+  flex-direction: column;
+
   text-align: left;
+}
+
+.gallery-list__item {
+  margin-bottom: 15px;
+
+  min-height: 400px;
 }
 
 .gallery-list__full-version-link {
   display: block;
 
+  margin-bottom: 10px;
+
   padding-top: 22px;
 }
 
 .gallery-list__title {
-  font-size: $font-size-big;
-  line-height: $line-height-big;
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
   font-weight: 700;
+
+  margin: 0;
 }
 
 .gallery-list__author {
@@ -22,8 +35,39 @@
   font-weight: 400px;
   text-transform: none;
   color: $text-lightgrey;
+
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.gallery-list__like-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.gallery-list__button {
+  border: none;
+
+  margin: 0;
+
+  padding: 0;
+
+  background-color: $bg-white;
+  /*width: 23px;
+  height: 21px;*/
+  /*background-color: $bg-white;
+  background-image: url("../img/icon-like.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 23px 21px;*/
 }
 
 .gallery-list__like-counter {
-  padding-left: 35px;
+  display: block;
+
+  margin-left: 14px;
+
+  padding-top: 3px;
 }

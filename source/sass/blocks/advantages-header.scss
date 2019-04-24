@@ -35,3 +35,9 @@
     font-size: $font-size-largest;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages-header__intro {
+    padding-top: 15px;
+  }
+}

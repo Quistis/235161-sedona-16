@@ -1,3 +1,89 @@
 .player-control {
-  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  width: 280px;
+
+  margin: 0 20px;
+}
+
+.player-control__progress-bar-wrapper {
+  position: relative;
+
+  width: 280px;
+  height: 45px;
+
+  margin-top: -51px;
+
+  padding-top: 22px;
+  padding-bottom: 20px;
+  padding-left: 22px;
+  padding-right: 23px;
+
+  background-color: #666666;
+  opacity: 0.6;
+}
+
+.player-control__progress-bar {
+  width: 235px;
+  height: 3px;
+
+  background-color: #f5f5f5;
+  opacity: 0.2;
+}
+
+.player-control__progress-marker {
+  position: absolute;
+  top: 19px;
+  left: 58px;
+
+  width: 10px;
+  height: 10px;
+
+  border: none;
+  border-radius: 50%;
+  background-color: $bg-white;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.player-conrtol__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 280px;
+  min-height: 64px;
+
+  margin-top: -5px;
+
+  background-color: #f2f2f2;
+}
+
+.player-control__button {
+  height: 20px;
+
+  padding: 0;
+
+  border: none;
+
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.player-control__playback {
+  margin-left: 25px;
+}
+
+.player-control__subtitles {
+  margin-left: auto;
+}
+
+.player-control__fullscreen {
+  margin-left: 31px;
+  margin-right: 23px;
 }
