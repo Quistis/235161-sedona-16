@@ -1,7 +1,7 @@
 .photo-block {
   min-width: 280px;
-  margin: 0 20px;
-  margin-bottom: 33px;
+  margin: 0 auto;
+  margin-bottom: 11px;
 
   padding-top: 37px;
 
@@ -30,5 +30,41 @@
   width: 275px;
 
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-block {
+    min-width: 648px;
+
+    padding-top: 64px;
+
+    margin-bottom: 67px;
+  }
+
+  .photo-block__title {
+    font-size: $font-size-even-larger;
+
+    margin-bottom: 31px;
+  }
+
+  .photo-block__description {
+    min-width: 430px;
+
+    margin-bottom: 69px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-block {
+    width: 1200px;
+
+    padding-top: 112px;
+
+    margin-bottom: 71px;
+  }
+
+  .photo-block__description {
+    margin-bottom: 71px;
+  }
 }

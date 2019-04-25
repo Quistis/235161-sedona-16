@@ -1,24 +1,35 @@
 .gallery-list {
   @include list-reset;
 
+  width: 100%;
+  margin: 0 auto;
+
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+
+  padding-left: 20px;
+  padding-right: 20px;
 
   text-align: left;
 }
 
 .gallery-list__item {
-  margin-bottom: 15px;
+  width: 100%;
 
-  min-height: 400px;
+  margin-bottom: 41px;
 }
 
 .gallery-list__full-version-link {
   display: block;
 
-  margin-bottom: 10px;
+  margin-bottom: 16px;
+}
 
-  padding-top: 22px;
+.gallery-list__image {
+  display: block;
+
+  width: 100%;
 }
 
 .gallery-list__title {
@@ -70,4 +81,117 @@
   margin-left: 14px;
 
   padding-top: 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery-list {
+    flex-direction: row;
+
+    width: 100%;
+
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .gallery-list__item {
+    width: 50%;
+
+    margin-bottom: 0;
+  }
+
+  .gallery-list__item--full-width {
+    width: 100%;
+
+    .gallery-list__image {
+      height: 400px;
+    }
+
+    .gallery-list__like-wrapper {
+      margin-right: 20px;
+    }
+
+    .gallery-list__like-counter {
+      margin-left: 9px;
+      padding-top: 2px;
+      width: 33px;
+    }
+  }
+
+  .gallery-list__image {
+    height: 267px;
+  }
+
+  .gallery-list__gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 16px;
+    padding-bottom: 10px;
+
+    background-color: $bg-whitegreyish;
+  }
+
+  .gallery-list__description-wrapper {
+    margin-left: 20px;
+  }
+
+  .gallery-list__full-version-link {
+    display: block;
+
+    margin-bottom: 0;
+  }
+
+  .gallery-list__like-wrapper {
+    margin-right: 30px;
+  }
+
+  .gallery-list__button {
+    padding-bottom: 8px;
+
+    background-color: inherit;
+  }
+
+  .gallery-list__like-counter {
+    margin-left: 9px;
+    padding-top: 2px;
+    width: 23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery-list {
+    flex-direction: row;
+
+    width: 100%;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .gallery-list__item {
+    width: 33.3%;
+  }
+
+  .gallery-list__item--full-width {
+    width: 100%;
+  }
+
+  .gallery-list__gallery-wrapper {
+    margin-top: -80px;
+  }
+
+  .gallery-list__title {
+    color: $text-white;
+  }
+
+  .gallery-list__author {
+    color: $text-white;
+  }
+
+  .gallery-list__like-counter {
+    color: #ffffff;
+  }
 }

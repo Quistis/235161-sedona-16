@@ -78,7 +78,7 @@
   .social {
     flex-direction: row;
 
-    width: 768px;
+    width: 100%;
   }
 
   .social__hashtag {
@@ -100,12 +100,12 @@
   }
 
   .social__hashtag {
-    width: 400px;
+    width: 266px;
   }
 
   .social__social-list {
     justify-content: center;
-    width: 400px;
+    width: 369px;
   }
 
   .social__item {
@@ -115,7 +115,7 @@
   .social__developer-wrapper {
     justify-content: center;
 
-    width: 400px;
+    width: 271px;
   }
 
   .social__developer-icon {
