@@ -3,7 +3,9 @@
 
   text-align: center;
 
-  padding-top: 40px;
+  padding-top: 37px;
+
+  margin-bottom: 36px;
 }
 
 .feedback-intro__title {
@@ -11,6 +13,9 @@
   line-height: $line-height-big;
   font-weight: 700;
   color: $text-black;
+
+  margin: 0;
+  margin-bottom: 26px;
 }
 
 .feedback-intro__description {
@@ -18,4 +23,40 @@
   line-height: $line-height-medium;
   font-weight: 400;
   color: $text-lightgrey;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-intro {
+    width: 648px;
+
+    margin: 0 auto;
+    margin-bottom: 74px;
+
+    padding-top: 65px;
+  }
+
+  .feedback-intro__title {
+    font-size: $font-size-even-larger;
+
+    margin-bottom: 30px;
+  }
+
+  .feedback-intro__description {
+    width: 447px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-intro {
+    width: 960px;
+
+    margin-bottom: 59px;
+
+    padding-top: 113px;
+  }
+
+  .feedback-intro__title {
+    margin-bottom: 30px;
+  }
 }

@@ -1,5 +1,26 @@
 .page-header {
-  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+
+  background-color: $bg-white;
+}
+
+.page-header__logo-wrapper {
+  position: relative;
+  min-width: 320px;
+  height: 56px;
+}
+
+.page-header__logo-link {
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+  /*--либо можно через отрицательный маргин в половину от ширины логотипа--*/
+
+  min-height: 56px;
 }
 
 .page-header__logo-image {
@@ -25,9 +46,7 @@
   justify-content: center;
 
   width: 100%;
-  min-height: 160px;
-
-  padding-left: 20px;
+  min-height: 158px;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -36,8 +55,51 @@
 }
 
 .page-header__small-logo-img {
-  padding-top: 52px;
-  padding-right: 30px;
-  padding-bottom: 67px;
-  padding-left: 30px;
+  padding-bottom: 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 100%;
+  }
+
+  .page-header__logo-wrapper {
+    height: 0;
+  }
+
+  .page-header__logo-link {
+    top: -56px;
+  }
+
+  .page-header__big-logo {
+    min-height: 518px;
+  }
+
+  .page-header__big-logo-img {
+    width: 460px;
+    height: auto;
+
+    padding-bottom: 14px;
+  }
+
+  .page-header__small-logo {
+    min-height: 300px;
+  }
+
+  .page-header__small-logo-img {
+    width: 458px;
+    height: auto;
+
+    padding-bottom: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
+
+  .page-header__small-logo-img {
+    padding-bottom: 17px;
+  }
 }

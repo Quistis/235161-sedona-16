@@ -1,14 +1,28 @@
 .main-navigation {
-  min-width: 320px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  font-size: $font-size-big;
-  line-height: $line-height-largest;
-  font-weight: 700;
-  color: $text-white;
+  /*min-width: 320px;
+  margin: 0 auto;*/
 }
 
 .main-navigation__list {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation {
+    flex-direction: row;
+
+    min-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation {
+    min-width: 1200px;
+  }
 }
