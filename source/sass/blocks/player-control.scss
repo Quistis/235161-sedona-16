@@ -10,7 +10,7 @@
   margin: 0 auto;
   margin-top: -45px;
 
-  background-color: #f2f2f2;
+  background-color: $bg-whitegreyish;
 }
 
 .player-control__progress-bar-wrapper {
@@ -34,7 +34,7 @@
   width: 100%;
   height: 3px;
 
-  background-color: #f5f5f5;
+  background-color: $bg-white;
   opacity: 0.2;
 }
 
@@ -77,6 +77,26 @@
   margin-left: 31px;
   margin-right: 23px;
 }
+
+.player-control__playback-icon path,
+.player-control__subtitles-icon path,
+.player-control__fullscreen-icon path {
+  fill: $bg-greyishblue;
+}
+
+.player-control__playback-icon:hover path,
+.player-control__subtitles-icon:hover path,
+.player-control__fullscreen-icon:hover path {
+  fill: $bg-darkergrey;
+}
+
+.player-control__playback-icon:active path,
+.player-control__subtitles-icon:active path,
+.player-control__fullscreen-icon:active path {
+  fill: $bg-darkergrey;
+  opacity: 0.3;
+}
+
 
 @media (min-width: $tablet-width) {
   .player-control {
@@ -124,6 +144,26 @@
     margin-right: 39px;
     margin-left: 30px;
     order: 4;
+  }
+
+  .player-control__playback-icon path,
+  .player-control__subtitles-icon path,
+  .player-control__fullscreen-icon path {
+    fill: $bg-white;
+  }
+
+  .player-control__playback-icon:hover path,
+  .player-control__subtitles-icon:hover path,
+  .player-control__fullscreen-icon:hover path {
+    fill: $bg-white;
+    opacity: 0.6;
+  }
+
+  .player-control__playback-icon:active path,
+  .player-control__subtitles-icon:active path,
+  .player-control__fullscreen-icon:active path {
+    fill: $bg-white;
+    opacity: 0.3;
   }
 }
 

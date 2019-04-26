@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
 
+  position: relative;
+
   background-color: $bg-white;
 }
 
@@ -41,6 +43,21 @@
   background-size: cover;
 }
 
+.page-header__big-logo::before {
+  position: absolute;
+
+  content: "";
+
+  bottom: -1px;
+
+  width: 320px;
+  height: 26px;
+
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .page-header__small-logo {
   display: flex;
   justify-content: center;
@@ -52,6 +69,21 @@
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
+}
+
+.page-header__small-logo::before {
+  position: absolute;
+
+  content: "";
+
+  bottom: -1px;
+
+  width: 320px;
+  height: 26px;
+
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .page-header__small-logo-img {
@@ -75,6 +107,21 @@
     min-height: 518px;
   }
 
+  .page-header__big-logo::before {
+    position: absolute;
+
+    content: "";
+
+    bottom: 0;
+
+    width: 768px;
+    height: 57px;
+
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
   .page-header__big-logo-img {
     width: 460px;
     height: auto;
@@ -83,14 +130,29 @@
   }
 
   .page-header__small-logo {
-    min-height: 300px;
+    min-height: 290px;
+  }
+
+  .page-header__small-logo::before {
+    position: absolute;
+
+    content: "";
+
+    bottom: 0;
+
+    width: 768px;
+    height: 57px;
+
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .page-header__small-logo-img {
     width: 458px;
     height: auto;
 
-    padding-bottom: 34px;
+    padding-bottom: 23px;
   }
 }
 
@@ -99,7 +161,41 @@
     width: 1200px;
   }
 
+  .page-header__small-logo {
+    min-height: 300px;
+  }
+
   .page-header__small-logo-img {
     padding-bottom: 17px;
+  }
+
+  .page-header__big-logo::before {
+    position: absolute;
+
+    content: "";
+
+    bottom: 0;
+
+    width: 1200px;
+    height: 57px;
+
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .page-header__small-logo::before {
+    position: absolute;
+
+    content: "";
+
+    bottom: 0;
+
+    width: 1200px;
+    height: 57px;
+
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }

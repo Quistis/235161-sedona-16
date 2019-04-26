@@ -13,7 +13,57 @@
 }
 
 .feature-list__item {
+  position: relative;
+
   margin-bottom: 11px;
+}
+
+.feature-list__item--housing::before {
+  content: "";
+
+  position: absolute;
+
+  top: 6px;
+  left: -48px;
+
+  width: 39px;
+  height: 37px;
+
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.feature-list__item--souvenir::before {
+  content: "";
+
+  position: absolute;
+
+  top: 6px;
+  left: -45px;
+
+  width: 39px;
+  height: 37px;
+
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.feature-list__item--food::before {
+  content: "";
+
+  position: absolute;
+
+  top: 11px;
+  left: -51px;
+
+  width: 39px;
+  height: 37px;
+
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .feature-list__text-transposition {
@@ -46,7 +96,7 @@
   .feature-list {
     flex-direction: row;
 
-    width: 768px;
+    width: 100%;
     min-height: 303px;
 
     text-align: center;
@@ -59,7 +109,7 @@
     align-items: center;
     flex-wrap: wrap;
 
-    width: 256px;
+    width: 33.3%;
   }
 
   .feature-list__title {
@@ -86,6 +136,30 @@
   .feature-list__item--food {
     order: 2;
   }
+
+  .feature-list__item--housing::before {
+    top: 21%;
+    left: 35%;
+
+    width: 29%;
+    height: 28%;
+  }
+
+  .feature-list__item--souvenir::before {
+    top: 19%;
+    left: 37%;
+
+    width: 27%;
+    height: 26%;
+  }
+
+  .feature-list__item--food::before {
+    top: 63px;
+    left: 90px;
+
+    width: 75px;
+    height: 72px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -95,6 +169,27 @@
 
   .feature-list__item {
     width: 400px;
+  }
+
+  .feature-list__item--housing::before {
+    top: 59px;
+    left: 161px;
+    width: 75px;
+    height: 73px;
+  }
+
+  .feature-list__item--souvenir::before {
+    top: 56px;
+    left: 167px;
+    width: 75px;
+    height: 76px;
+  }
+
+  .feature-list__item--food::before {
+    top: 63px;
+    left: 162px;
+    width: 75px;
+    height: 72px;
   }
 
   .feature-list__text-transposition {

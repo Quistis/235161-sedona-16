@@ -10,7 +10,10 @@
 
   <body>
     <header class="container page-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation main-navigation--nojs">
+        <button type="button" class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-navigation__list site-list">
           <li class="site-list__item site-list__item--active">
             <a href="index.html">Главная</a>
@@ -28,7 +31,9 @@
       </nav>
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo-link" href="#"><img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны"></a>
-        <button class="visually-hidden main-navigation__toggle" type="button">Открыть меню</button>
+        <!--<button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>-->
       </div>
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
       <div class="page-header__big-logo"><img class="page-header__big-logo-img" src="img/text-sedona-index.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону. А Гранд-Каньон - отстой!:D"></div>
@@ -150,5 +155,23 @@
         </div>
       </section>
     </footer>
+
+    <!--<script>
+  var navMain = document.querySelector('.main-navigation');
+  var navToggle = document.querySelector('.main-navigation__toggle');
+
+  navMain.classList.remove('main-navigation--no-js');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-navigation--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-navigation--opened');
+    } else {
+      navMain.classList.add('main-navigation--closed');
+      navMain.classList.remove('main-navigation--opened');
+    }
+  });
+</script>-->
+
   </body>
 </html>
