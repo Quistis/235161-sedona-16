@@ -1,0 +1,50 @@
+.popup-success {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 30px;
+  padding-bottom: 25px;
+
+  background-color: $bg-white;
+
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.popup-success__title {
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+  font-weight: 700;
+  color: $text-black;
+
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.popup-success__description {
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
+  font-weight: 400;
+  color: $text-lightgrey;
+
+  text-align: center;
+
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 20px;
+}
+
+.popup-success__button {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}

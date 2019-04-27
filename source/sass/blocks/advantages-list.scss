@@ -6,6 +6,10 @@
   flex-direction: column;
 
   text-align: center;
+
+  padding-top: 20px;
+
+  background-color: $bg-lightblue;
 }
 
 .advantages-list::before {
@@ -13,15 +17,14 @@
 
   content: "";
 
-  top: -39px;
+  top: -29px;
 
-  width: 320px;
+  width: 100%;
   height: 57px;
 
   background-image: url("../img/bg-triangle.svg");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-color: $bg-lightblue;
+  background-position: center;
 }
 
 .advantages-list__item {
@@ -146,6 +149,8 @@
   .advantages-list {
     flex-direction: row;
     flex-wrap: wrap;
+
+    padding-top: 0;
   }
 
   .advantages-list::before {

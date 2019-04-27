@@ -105,7 +105,7 @@
   .feature-list__item {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 
@@ -115,14 +115,15 @@
   .feature-list__title {
     font-size: $font-size-largest;
 
-    margin-bottom: 21px;
+    margin-top: 0;
+    margin-bottom: 15px;
   }
 
   .feature-list__description {
     width: 162px;
 
-    margin-top: 0;
-    margin-bottom: 23px;
+    margin-top: 6px;
+    margin-bottom: 0;
   }
 
   .feature-list__item--housing {
@@ -138,24 +139,28 @@
   }
 
   .feature-list__item--housing::before {
-    top: 21%;
-    left: 35%;
+    position: static;
+    margin-top: 60px;
+    margin-bottom: 27px;
 
-    width: 29%;
-    height: 28%;
+    width: 75px;
+    height: 72px;
   }
 
   .feature-list__item--souvenir::before {
-    top: 19%;
-    left: 37%;
+    position: static;
+    margin-top: 56px;
+    margin-bottom: 27px;
 
-    width: 27%;
-    height: 26%;
+
+    width: 68px;
+    height: 76px;
   }
 
   .feature-list__item--food::before {
-    top: 63px;
-    left: 90px;
+    position: static;
+    margin-top: 65px;
+    margin-bottom: 22px;
 
     width: 75px;
     height: 72px;
@@ -168,26 +173,25 @@
   }
 
   .feature-list__item {
+    justify-content: flex-start;
     width: 400px;
   }
 
   .feature-list__item--housing::before {
-    top: 59px;
-    left: 161px;
+    margin-top: 59px;
     width: 75px;
     height: 73px;
   }
 
   .feature-list__item--souvenir::before {
-    top: 56px;
-    left: 167px;
-    width: 75px;
+    margin-top: 56px;
+    width: 66px;
     height: 76px;
   }
 
   .feature-list__item--food::before {
-    top: 63px;
-    left: 162px;
+    margin-top: 63px;
+    margin-bottom: 25px;
     width: 75px;
     height: 72px;
   }
@@ -196,9 +200,15 @@
     display: block;
   }
 
+  .feature-list__title {
+    margin-top: 0;
+    margin-bottom: 21px;
+  }
+
   .feature-list__description {
     width: 290px;
 
-    margin-bottom: 44px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }

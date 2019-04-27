@@ -10,7 +10,10 @@
 
   <body>
     <header class="container page-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+        <button type="button" class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
             <a href="index.html">Главная</a>
@@ -28,7 +31,6 @@
       </nav>
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo-link" href="#"><img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны"></a>
-        <button class="visually-hidden main-navigation__toggle" type="button">Открыть меню</button>
       </div>
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
       <div class="page-header__small-logo"><img class="page-header__small-logo-img" src="img/text-sedona.svg" width="229" height="39" alt="Добро пожаловать в великолепную Седону. А Гранд-Каньон - отстой!:D"></div>
@@ -58,7 +60,7 @@
             <div class="feedback-form__wrapper">
               <label class="feedback-form__label feedback-form__label--fullname" for="patronymic">Отчество:</label>
               <input class="feedback-form__input feedback-form__input--patronymic" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
-              </div>
+            </div>
           </fieldset>
           <fieldset class="feedback-form__contacts">
             <legend class="feedback-form__legend feedback-form__legend--contacts">Контактная информация:</legend>
@@ -77,14 +79,16 @@
           <fieldset class="feedback-form__impression">
             <legend class="feedback-form__legend feedback-form__legend--impression">Ваше общее впечатление:</legend>
             <span class="visually-hidden">Каким было ваше впечатление от поездки?</span>
-            <input class="visually-hidden feedback-form__input feedback-form__input--impression" type="radio" name="impression-scale" value="positive" id="positive" checked>
-            <label class="feedback-form__label feedback-form__label--impression" for="positive">Скорее положительное</label>
+            <div class="feedback-form__impression-wrapper">
+              <input class="visually-hidden feedback-form__input feedback-form__input--impression" type="radio" name="impression-scale" value="positive" id="positive" checked>
+              <label class="feedback-form__label feedback-form__label--impression" for="positive">Скорее положительное</label>
 
-            <input class="visually-hidden feedback-form__input feedback-form__input--impression" type="radio" name="impression-scale" value="negative" id="negative">
-            <label class="feedback-form__label feedback-form__label--impression" for="negative">Скорее отрицательное</label>
+              <input class="visually-hidden feedback-form__input feedback-form__input--impression" type="radio" name="impression-scale" value="negative" id="negative">
+              <label class="feedback-form__label feedback-form__label--impression" for="negative">Скорее отрицательное</label>
 
-            <input class="visually-hidden feedback-form__input feedback-form__input--impression" type="radio" name="impression-scale" value="undecided" id="undecided">
-            <label class="feedback-form__label feedback-form__label--impression" for="undecided">Затрудняюсь ответить</label>
+              <input class="visually-hidden feedback-form__input feedback-form__input--impression" type="radio" name="impression-scale" value="undecided" id="undecided">
+              <label class="feedback-form__label feedback-form__label--impression" for="undecided">Затрудняюсь ответить</label>
+            </div>
           </fieldset>
           <fieldset class="feedback-form__showplace">
             <legend class="feedback-form__legend feedback-form__legend--showplace">Посещенные достопримечательности:</legend>
@@ -163,9 +167,27 @@
       </div>
       <div class="modal__popup-success popup-success">
         <h3 class="popup-success__title">Ваш отзыв отправлен!</h3>
-        <p class="popup-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <p class="popup-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
         <button class="button popup-success__button" type="button">Закрыть окно</button>
       </div>
     </section>
+
+    <script>
+    var navMain = document.querySelector('.main-navigation');
+    var navToggle = document.querySelector('.main-navigation__toggle');
+
+    navMain.classList.remove('main-navigation--no-js');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-navigation--closed')) {
+        navMain.classList.remove('main-navigation--closed');
+        navMain.classList.add('main-navigation--opened');
+      } else {
+        navMain.classList.add('main-navigation--closed');
+        navMain.classList.remove('main-navigation--opened');
+      }
+    });
+    </script>
+
   </body>
 </html>
