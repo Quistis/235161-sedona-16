@@ -57,12 +57,12 @@
             <span class="visually-hidden">Введите свои фамилию, имя и отчество</span>
             <div class="feedback-form__wrapper">
               <label class="feedback-form__label feedback-form__label--fullname" for="first-name">Имя<sup>*</sup>:</label>
-              <input class="feedback-form__input feedback-form__input--fullname" type="text" name="first-name" id="first-name" placeholder="Петр">
+              <input class="feedback-form__input feedback-form__input--fullname" type="text" name="first-name" id="first-name" placeholder="Петр" required>
             </div>
 
             <div class="feedback-form__wrapper">
               <label class="feedback-form__label feedback-form__label--fullname" for="surname">Фамилия<sup>*</sup>:</label>
-              <input class="feedback-form__input feedback-form__input--surname" type="text" name="surname" id="surname" placeholder="Иванов">
+              <input class="feedback-form__input feedback-form__input--surname" type="text" name="surname" id="surname" placeholder="Иванов" required>
             </div>
 
             <div class="feedback-form__wrapper">
@@ -76,11 +76,11 @@
             <div class="feedback-form__contacts-wrapper">
               <div class="feedback-form__phone-wrapper">
                 <label class="feedback-form__label feedback-form__label--contacts" for="phone"><span class="feedback-form__label-camouflage">Контактный</span> телефон<sup>*</sup>:</label>
-                <input class="feedback-form__input feedback-form__input--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон">
+                <input class="feedback-form__input feedback-form__input--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
               </div>
               <div class="feedback-form__email-wrapper">
                 <label class="feedback-form__label feedback-form__label--email" for="email">Электронная почта<sup>*</sup>:</label>
-                <input class="feedback-form__input feedback-form__input--email" type="email" name="email" id="email" placeholder="Введите e-mail">
+                <input class="feedback-form__input feedback-form__input--email" type="email" name="email" id="email" placeholder="Введите e-mail" required>
               </div>
             </div>
           </fieldset>
