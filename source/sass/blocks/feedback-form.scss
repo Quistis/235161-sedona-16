@@ -1,4 +1,6 @@
 .feedback-form__full-name {
+  position: relative;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -11,8 +13,38 @@
   margin-bottom: 45px;
 }
 
+.feedback-form__full-name::before {
+  position: absolute;
+
+  content: "";
+
+  top: -19px;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: $bg-palegrey;
+}
+
+.feedback-form__full-name::after {
+  position: absolute;
+
+  content: "";
+
+  bottom: -26px;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: $bg-palegrey;
+}
+
 .feedback-form__wrapper {
-  width: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  width: 100%;
 }
 
 .feedback-form__legend {
@@ -61,27 +93,57 @@
   }
 }
 
+.feedback-form__input:hover {
+  background-color: $bg-palegrey;
+}
+
+.feedback-form__input:active,
+.feedback-form__input:focus {
+  background-color: $bg-white;
+  border: 4px solid $bg-palegrey;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 18px;
+
+  outline: none;
+}
+
 .feedback-form__label--fullname {
   width: 30px;
+
+  padding-top: 17px;
 }
 
 .feedback-form__input--fullname {
-  width: 230px;
+  /*width: 230px;*/
+  width: 100%;
 
   margin-bottom: 20px;
+  margin-left: 21px;
+  margin-right: 20px;
 }
 
 .feedback-form__input--surname {
-  width: 192px;
+  /*width: 192px;*/
+  width: 100%;
 
   margin-bottom: 20px;
+  margin-left: 59px;
+  margin-right: 20px;
 }
 
 .feedback-form__input--patronymic {
-  width: 194px;
+  /*width: 194px;*/
+  width: 100%;
+
+  margin-left: 57px;
+  margin-right: 20px;
 }
 
 .feedback-form__contacts {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 
@@ -90,6 +152,19 @@
   padding: 0;
 
   margin-bottom: 47px;
+}
+
+.feedback-form__contacts::before {
+  position: absolute;
+
+  content: "";
+
+  bottom: -29px;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: $bg-palegrey;
 }
 
 .feedback-form__legend--contacts {
@@ -128,7 +203,8 @@
 }
 
 .feedback-form__input--phone {
-  min-width: 280px;
+  /*min-width: 280px;*/
+  width: 87.5%;
 
   margin-left: 17px;
   margin-bottom: 12px;
@@ -159,7 +235,8 @@
 }
 
 .feedback-form__input--email {
-  min-width: 280px;
+  /*min-width: 280px;*/
+  width: 87.5%;
 
   margin-left: 17px;
 
@@ -167,6 +244,8 @@
 }
 
 .feedback-form__impression {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 
@@ -177,15 +256,39 @@
   margin-bottom: 17px;
 }
 
+.feedback-form__impression::before {
+  position: absolute;
+
+  content: "";
+
+  bottom: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: $bg-palegrey;
+}
+
 .feedback-form__legend--impression {
   margin-bottom: 36px;
+}
+
+/*-------------Стили для центровки на мобилке------*/
+.feedback-form__impression-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .feedback-form__label--impression {
   position: relative;
 
-  margin-left: 96px;
+  /*margin-left: 96px;*/
+  width: 184px;
+  margin-left: 60px;
 }
+/*-------------------------------------------------------*/
 
 .feedback-form__input--impression + .feedback-form__label--impression {
   display: block;
@@ -209,7 +312,7 @@
   width: 55px;
   height: 55px;
 
-  border: 2px solid $bg-whitegreyish;
+  /*border: 2px solid $bg-whitegreyish;*/
   border-radius: 50%;
   background-color: $bg-whitegreyish;
 }
@@ -224,12 +327,31 @@
   width: 22px;
   height: 22px;
 
-  border: 1px solid $bg-darkergrey;
+  /*border: 0 solid $bg-darkergrey;*/
   border-radius: 50%;
   background-color: $bg-darkergrey;
 }
 
+.feedback-form__input--impression + .feedback-form__label--impression:hover::before {
+  background-color: $bg-palegrey;
+}
+
+.feedback-form__input--impression + .feedback-form__label--impression:active::before {
+  background-color: $bg-lightlydarkgrey;
+}
+
+.feedback-form__input--impression + .feedback-form__label--impression:active::after {
+  background-color: $bg-lightlydarkgrey;
+}
+
+.feedback-form__input--impression:checked + .feedback-form__label--impression:active::after {
+  background-color: $bg-darkergrey;
+  opacity: 0.3;
+}
+
 .feedback-form__showplace {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 
@@ -240,15 +362,40 @@
   margin-bottom: 6px;
 }
 
+.feedback-form__showplace::before {
+  position: absolute;
+
+  content: "";
+
+  bottom: 12px;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: $bg-palegrey;
+}
+
 .feedback-form__legend--showplace {
   margin-bottom: 31px;
+}
+
+/*--------Стили для центровки на главной*------------*/
+.feedback-form__showplace-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .feedback-form__label--showplace {
   position: relative;
 
-  margin-left: 96px;
+  /*margin-left: 96px;*/
+
+  width: 125px;
+  margin-left: 0;
 }
+/*--------------------------------------------------------*/
 
 .feedback-form__input--showplace + .feedback-form__label--showplace {
   display: block;
@@ -292,6 +439,22 @@
   background-position: 0 0;
 }
 
+.feedback-form__input--showplace + .feedback-form__label--showplace:hover::before {
+  background-color: $bg-palegrey;
+}
+
+.feedback-form__input--showplace + .feedback-form__label--showplace:active::before {
+  background-color: $bg-lightlydarkgrey;
+}
+
+.feedback-form__input--showplace + .feedback-form__label--showplace:active::after {
+  background-color: $bg-lightlydarkgrey;
+}
+
+.feedback-form__input--showplace:checked + .feedback-form__label--showplace:active::after {
+  opacity: 0.3;
+}
+
 .feedback-form__review {
   display: block;
   border: none;
@@ -313,11 +476,11 @@
 
   display: block;
 
-  width: 280px;
+  width: 87.5%;
   min-height: 160px;
 
-  padding-top: 15px;
-  padding-left: 21px;
+  padding-top: 16px;
+  padding-left: 22px;
 
   margin-left: 18px;
 
@@ -330,6 +493,8 @@
 }
 
 .feedback-form__button {
+  width: 87.5%;
+
   margin-left: 19px;
 }
 
@@ -357,6 +522,11 @@
     order: 2;
   }
 
+  .feedback-form__full-name::before,
+  .feedback-form__full-name::after {
+    display: none;
+  }
+
   .feedback-form__legend--fullname {
     font-size: $font-size-largest;
 
@@ -366,20 +536,33 @@
     margin-left: 54px;
   }
 
+  .feedback-form__wrapper {
+    display: block;
+  }
+
   .feedback-form__label--fullname {
     margin-left: 55px;
   }
 
   .feedback-form__input--fullname {
     width: 213px;
+
+    margin-right: 0;
+    margin-left: 11px;
   }
 
   .feedback-form__input--surname {
     width: 176px;
+
+    margin-left: 12px;
+    margin-right: 0;
   }
 
   .feedback-form__input--patronymic {
     width: 180px;
+
+    margin-left: 12px;
+    margin-right: 0;
   }
 
   .feedback-form__contacts {
@@ -390,6 +573,10 @@
     margin-bottom: 30px;
 
     order: 3;
+  }
+
+  .feedback-form__contacts::before {
+    display: none;
   }
 
   .feedback-form__legend--contacts {
@@ -440,7 +627,7 @@
 
   .feedback-form__input--phone,
   .feedback-form__input--email {
-    min-width: 648px;
+    width: 648px;
 
     margin-left: 0;
     margin-bottom: 23px;
@@ -460,7 +647,7 @@
 
     position: absolute;
     top: 5px;
-    right: 2px;
+    right: -2px;
 
     width: 1px;
     height: 292px;
@@ -474,6 +661,10 @@
     text-align: left;
 
     margin-bottom: 74px;
+  }
+
+  .feedback-form__impression-wrapper {
+    display: block;
   }
 
   .feedback-form__label--impression {
@@ -496,6 +687,10 @@
     order: 4;
   }
 
+  .feedback-form__showplace::before {
+    display: none;
+  }
+
   .feedback-form__showplace-wrapper {
     display: flex;
     flex-direction: row;
@@ -505,11 +700,39 @@
   }
 
   .feedback-form__legend--showplace {
+    position: relative;
+
     font-size: $font-size-largest;
 
     width: 290px;
 
     margin-bottom: 55px;
+  }
+
+  .feedback-form__legend--showplace::before {
+    content: "";
+
+    position: absolute;
+    top: 25px;
+    left: -179px;
+
+    width: 125px;
+    height: 1px;
+
+    background-color: $bg-darkishgrey;
+  }
+
+  .feedback-form__legend--showplace::after {
+    content: "";
+
+    position: absolute;
+    top: 25px;
+    right: -180px;
+
+    width: 125px;
+    height: 1px;
+
+    background-color: $bg-darkishgrey;
   }
 
   .feedback-form__label--showplace {
@@ -532,9 +755,37 @@
   }
 
   .feedback-form__legend--review {
+    position: relative;
+
     font-size: $font-size-largest;
 
     margin-bottom: 57px;
+  }
+
+  .feedback-form__legend--review::before {
+    content: "";
+
+    position: absolute;
+    top: 12px;
+    left: -199px;
+
+    width: 125px;
+    height: 1px;
+
+    background-color: $bg-darkishgrey;
+  }
+
+  .feedback-form__legend--review::after {
+    content: "";
+
+    position: absolute;
+    top: 12px;
+    right: -198px;
+
+    width: 125px;
+    height: 1px;
+
+    background-color: $bg-darkishgrey;
   }
 
   .feedback-form__textarea {
@@ -617,6 +868,20 @@
     margin-bottom: 73px;
   }
 
+  .feedback-form__legend--contacts::before {
+    top: 12px;
+    left: -341px;
+
+    width: 280px;
+  }
+
+  .feedback-form__legend--contacts::after {
+    top: 12px;
+    right: -341px;
+
+    width: 280px;
+  }
+
   .feedback-form__contacts-wrapper {
     display: flex;
     flex-direction: row;
@@ -667,7 +932,7 @@
 
   .feedback-form__input--phone,
   .feedback-form__input--email {
-    min-width: 315px;
+    width: 315px;
 
     margin-left: 16px;
     margin-bottom: 0;
@@ -697,6 +962,20 @@
     width: 960px;
   }
 
+  .feedback-form__legend--showplace::before {
+    top: 25px;
+    left: -334px;
+
+    width: 280px;
+  }
+
+  .feedback-form__legend--showplace::after {
+    top: 25px;
+    right: -337px;
+
+    width: 280px;
+  }
+
   .feedback-form__showplace-wrapper {
     width: 960px;
   }
@@ -711,6 +990,32 @@
 
   .feedback-form__legend--review {
     margin-bottom: 56px;
+  }
+
+  .feedback-form__legend--review::before {
+    content: "";
+
+    position: absolute;
+    top: 11px;
+    left: -354px;
+
+    width: 280px;
+    height: 1px;
+
+    background-color: $bg-darkishgrey;
+  }
+
+  .feedback-form__legend--review::after {
+    content: "";
+
+    position: absolute;
+    top: 11px;
+    right: -356px;
+
+    width: 280px;
+    height: 1px;
+
+    background-color: $bg-darkishgrey;
   }
 
   .feedback-form__textarea {

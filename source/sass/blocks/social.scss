@@ -40,12 +40,25 @@
   width: 46px;
   height: 50px;
 
-  background-color: #81b3d2;
+  background-color: $bg-lightblue;
   border: none;
+
+  &:hover,
+  &focus {
+    background-color: $bg-darkblue;
+  }
+
+  &:active {
+    background-color: $bg-darkerblue;
+  }
 }
 
-.social__social-icon path {
+.social__social-icon {
   fill: #ffffff;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__developer-wrapper {
@@ -70,8 +83,17 @@
   padding-top: 7px;
 }
 
-.social__developer-icon path {
+.social__developer-icon {
   fill: #000000;
+
+  &:hover,
+  &:focus {
+    fill: $bg-lightblue;
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

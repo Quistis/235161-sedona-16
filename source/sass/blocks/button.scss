@@ -18,4 +18,19 @@
 
   background-color: $bg-lightblue;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-darkblue;
+  }
+
+  &:active {
+    background-color: $bg-darkerblue;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $bg-palegrey;
+    color: $text-white;
+  }
 }
