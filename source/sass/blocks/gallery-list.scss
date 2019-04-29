@@ -105,7 +105,7 @@
   background-size: 23px 21px;*/
 }
 
-.gallery-list__like-icon path {
+.gallery-list__like-icon {
   fill: $bg-black;
   opacity: 0.3;
 }
@@ -149,7 +149,8 @@
     width: 100%;
 
     .gallery-list__image {
-      height: 400px;
+      min-height: 400px;
+      height: auto;
     }
 
     .gallery-list__like-wrapper {
@@ -164,7 +165,8 @@
   }
 
   .gallery-list__image {
-    height: 267px;
+    min-height: 267px;
+    height: auto;
   }
 
   .gallery-list__gallery-wrapper {
@@ -237,7 +239,7 @@
     color: $text-white;
   }
 
-  .gallery-list__like-icon path {
+  .gallery-list__like-icon {
     fill: $bg-white;
     opacity: 1;
   }
