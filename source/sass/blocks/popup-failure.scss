@@ -1,9 +1,14 @@
 .popup-failure {
   display: none;
-  flex-direction: column;
-  align-items: center;
 
-  width: 100%;
+  position: fixed;
+
+  width: 320px;
+  height: 280px;
+
+  bottom: 350px;
+  left: 50%;
+  margin-left: -160px;
 
   padding-top: 30px;
   padding-bottom: 25px;
@@ -41,6 +46,26 @@
 
 .popup-failure__button {
   width: 180px;
-  margin-left: auto;
+  margin-left: 70px;
   margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .popup-failure {
+    width: 400px;
+
+    margin-left: -200px;
+  }
+
+  .popup-failure__button {
+    margin-left: 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popup-failure {
+    width: 400px;
+
+    margin-left: -200px;
+  }
 }
