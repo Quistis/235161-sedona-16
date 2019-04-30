@@ -58,6 +58,8 @@
 
 .feedback-form__legend--fullname {
   margin-bottom: 21px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .feedback-form__label {
@@ -78,6 +80,8 @@
   color: $text-black;
 
   text-align: left;
+
+  height: 58px;
 
   padding-top: 16px;
   padding-bottom: 16px;
@@ -111,34 +115,49 @@
 }
 
 .feedback-form__label--fullname {
-  width: 30px;
+  width: 71px;
+
+  padding-top: 17px;
+}
+
+.feedback-form__label--surname {
+  width: 154px;
+
+  padding-top: 17px;
+}
+
+.feedback-form__label--patronymic {
+  width: 145px;
 
   padding-top: 17px;
 }
 
 .feedback-form__input--fullname {
   /*width: 230px;*/
+  min-width: 66.5%;
   width: 100%;
 
   margin-bottom: 20px;
-  margin-left: 21px;
+  margin-left: 0;
   margin-right: 20px;
 }
 
 .feedback-form__input--surname {
   /*width: 192px;*/
+  min-width: 60.5%;
   width: 100%;
 
   margin-bottom: 20px;
-  margin-left: 59px;
+  margin-left: 0;
   margin-right: 20px;
 }
 
 .feedback-form__input--patronymic {
   /*width: 194px;*/
+  min-width: 61.5%;
   width: 100%;
 
-  margin-left: 57px;
+  margin-left: 0;
   margin-right: 20px;
 }
 
@@ -170,6 +189,8 @@
 
 .feedback-form__legend--contacts {
   margin-bottom: 19px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .feedback-form__label--contacts,
@@ -271,7 +292,8 @@
 }
 
 .feedback-form__legend--impression {
-  margin-bottom: 36px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*-------------Стили для центровки на мобилке------*/
@@ -280,6 +302,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  padding-top: 36px;
 }
 
 .feedback-form__label--impression {
@@ -378,6 +402,8 @@
 
 .feedback-form__legend--showplace {
   margin-bottom: 31px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*--------Стили для центровки на главной*------------*/
@@ -467,6 +493,8 @@
 
 .feedback-form__legend--review {
   margin-bottom: 17px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .feedback-form__textarea {
@@ -545,7 +573,16 @@
     margin-left: 55px;
   }
 
+  .feedback-form__label--surname {
+    margin-left: 55px;
+  }
+
+  .feedback-form__label--patronymic {
+    margin-left: 55px;
+  }
+
   .feedback-form__input--fullname {
+    min-width: 213px;
     width: 213px;
 
     margin-right: 0;
@@ -553,6 +590,7 @@
   }
 
   .feedback-form__input--surname {
+    min-width: 176px;
     width: 176px;
 
     margin-left: 12px;
@@ -560,6 +598,7 @@
   }
 
   .feedback-form__input--patronymic {
+    min-width: 180px;
     width: 180px;
 
     margin-left: 12px;
@@ -661,11 +700,13 @@
 
     text-align: left;
 
-    margin-bottom: 74px;
+    margin-left: 0;
   }
 
   .feedback-form__impression-wrapper {
     display: block;
+
+    padding-top: 74px;
   }
 
   .feedback-form__label--impression {
@@ -839,6 +880,14 @@
     margin-left: 1px;
   }
 
+  .feedback-form__label--surname {
+    margin-left: 1px;
+  }
+
+  .feedback-form__label--patronymic {
+    margin-left: 1px;
+  }
+
   .feedback-form__input--fullname {
     width: 347px;
 
@@ -854,7 +903,7 @@
   }
 
   .feedback-form__contacts {
-    flex-direction: row;
+    display: block;
 
     width: 960px;
 
@@ -953,7 +1002,10 @@
 
   .feedback-form__legend--impression {
     margin-left: 77px;
-    margin-bottom: 72px;
+  }
+
+  .feedback-form__impression-wrapper {
+    padding-top: 72px;
   }
 
   .feedback-form__label--impression {

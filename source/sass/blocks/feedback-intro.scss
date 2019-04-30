@@ -23,6 +23,11 @@
   line-height: $line-height-medium;
   font-weight: 400;
   color: $text-lightgrey;
+
+  width: 275px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: $tablet-width) {
