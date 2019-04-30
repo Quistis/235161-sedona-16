@@ -13,7 +13,8 @@
   margin-bottom: 45px;
 }
 
-.feedback-form__full-name::before {
+/*----Перенес эту полоску в feedback-intro::before------*/
+/*.feedback-form__full-name::before {
   position: absolute;
 
   content: "";
@@ -24,7 +25,7 @@
   height: 1px;
 
   background-color: $bg-palegrey;
-}
+}*/
 
 .feedback-form__full-name::after {
   position: absolute;
