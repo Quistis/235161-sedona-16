@@ -78,21 +78,21 @@
   margin-right: 23px;
 }
 
-.player-control__playback-icon path,
-.player-control__subtitles-icon path,
-.player-control__fullscreen-icon path {
+.player-control__playback-icon,
+.player-control__subtitles-icon,
+.player-control__fullscreen-icon {
   fill: $bg-greyishblue;
 }
 
-.player-control__playback-icon:hover path,
-.player-control__subtitles-icon:hover path,
-.player-control__fullscreen-icon:hover path {
+.player-control__playback-icon:hover,
+.player-control__subtitles-icon:hover,
+.player-control__fullscreen-icon:hover {
   fill: $bg-darkergrey;
 }
 
-.player-control__playback-icon:active path,
-.player-control__subtitles-icon:active path,
-.player-control__fullscreen-icon:active path {
+.player-control__playback-icon:active,
+.player-control__subtitles-icon:active,
+.player-control__fullscreen-icon:active {
   fill: $bg-darkergrey;
   opacity: 0.3;
 }
@@ -146,22 +146,22 @@
     order: 4;
   }
 
-  .player-control__playback-icon path,
-  .player-control__subtitles-icon path,
-  .player-control__fullscreen-icon path {
+  .player-control__playback-icon,
+  .player-control__subtitles-icon,
+  .player-control__fullscreen-icon {
     fill: $bg-white;
   }
 
-  .player-control__playback-icon:hover path,
-  .player-control__subtitles-icon:hover path,
-  .player-control__fullscreen-icon:hover path {
+  .player-control__playback-icon:hover,
+  .player-control__subtitles-icon:hover,
+  .player-control__fullscreen-icon:hover {
     fill: $bg-white;
     opacity: 0.6;
   }
 
-  .player-control__playback-icon:active path,
-  .player-control__subtitles-icon:active path,
-  .player-control__fullscreen-icon:active path {
+  .player-control__playback-icon:active,
+  .player-control__subtitles-icon:active,
+  .player-control__fullscreen-icon:active {
     fill: $bg-white;
     opacity: 0.3;
   }

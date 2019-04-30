@@ -211,7 +211,9 @@
   }
 
   .page-header__small-logo-img {
-    padding-bottom: 17px;
+    /*padding-bottom: 17px;*/
+    padding-top: 100px;
+    padding-bottom: 120px;
   }
 
   .page-header__big-logo {
@@ -237,6 +239,8 @@
     background-image: url("../img/bg-intro-triangle-desktop.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    left: 0;
   }
 
   .page-header__small-logo::before {
@@ -252,5 +256,12 @@
     background-image: url("../img/bg-intro-triangle-desktop.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    left: 0;
+  }
+
+  .page-header__big-logo-img {
+    padding-bottom: 80px;
+    padding-top: 66px;
   }
 }

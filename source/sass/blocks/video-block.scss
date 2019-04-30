@@ -58,7 +58,8 @@
   }
 
   .video-block__image {
-    height: 500px;
+    min-height: 500px;
+    height: auto;
   }
 }
 
