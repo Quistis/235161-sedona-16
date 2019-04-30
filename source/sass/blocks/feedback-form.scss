@@ -90,6 +90,7 @@
 
   &::placeholder {
     color: inherit;
+    opacity: 1;
   }
 }
 
@@ -285,7 +286,7 @@
   position: relative;
 
   /*margin-left: 96px;*/
-  width: 184px;
+  width: 185px;
   margin-left: 60px;
 }
 /*-------------------------------------------------------*/
@@ -849,7 +850,7 @@
   }
 
   .feedback-form__input--patronymic {
-    width: 314px;
+    width: 313px;
   }
 
   .feedback-form__contacts {
@@ -860,6 +861,12 @@
     margin-bottom: 53px;
 
     order: 3;
+  }
+
+  .feedback-form__legend--contacts {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .feedback-form__legend--contacts {
@@ -960,6 +967,12 @@
     flex-wrap: wrap;
 
     width: 960px;
+  }
+
+  .feedback-form__legend--showplace {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .feedback-form__legend--showplace::before {
