@@ -16,6 +16,8 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
+var uglify = require("gulp-uglify");
+var pipeline = require("readable-stream").pipeline;
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -102,6 +104,15 @@ gulp.task("minifyhtml", function() {
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
+
+/*gulp.task("minjs", function () {
+  return pipeline(
+        gulp.src("source/js/*.js"),
+        .pipe(rename("*.min.js")),
+        uglify(),
+        gulp.dest("build/js")
+  );
+});*/
 
 gulp.task("build", gulp.series(
   "clean",
