@@ -114,7 +114,7 @@
 }
 
 .feedback-form__input:invalid {
-  outline-color: #e74246;
+  outline-color: $bg-pinkyred;
 }
 
 .feedback-form__label--fullname {
