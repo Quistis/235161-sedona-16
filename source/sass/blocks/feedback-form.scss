@@ -111,8 +111,10 @@
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 18px;
+}
 
-  outline: none;
+.feedback-form__input:invalid {
+  outline-color: #e74246;
 }
 
 .feedback-form__label--fullname {
