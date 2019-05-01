@@ -119,15 +119,20 @@
 @media (min-width: $desktop-width) {
   .social {
     width: 1200px;
+    justify-content: flex-start;
   }
 
   .social__hashtag {
-    width: 266px;
+    /*width: 266px;*/
+    width: 140px;
+    margin-left: 117px;
   }
 
   .social__social-list {
     justify-content: center;
-    width: 369px;
+    /*width: 369px;*/
+    width: 151px;
+    margin-left: 265px;
   }
 
   .social__item {
@@ -137,7 +142,10 @@
   .social__developer-wrapper {
     justify-content: center;
 
-    width: 271px;
+    /*width: 271px;*/
+    width: 140px;
+    margin-left: auto;
+    margin-right: 114px;
   }
 
   .social__developer-icon {
