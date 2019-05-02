@@ -247,4 +247,12 @@
   .gallery-list__like-counter {
     color: $text-white;
   }
+
+  .gallery-list__image {
+    height: 267px;
+  }
+
+  .gallery-list__item--full-width .gallery-list__image {
+    height: 400px;
+  }
 }
